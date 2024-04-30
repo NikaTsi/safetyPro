@@ -1,0 +1,101 @@
+{
+    "eng": {
+        "navigation": [
+            {
+                "title": "Services",
+                "url": "/services"
+            },
+            {
+                "title": "About us",
+                "url": "/aboutUs"
+            },
+            {
+                "title": "News",
+                "url": "/news"
+            },
+            {
+                "title": "Contact",
+                "url": "/contact"
+            },
+            {
+                "title": "Help",
+                "url": "/help"
+            }
+        ],
+        "pages": {
+            "main": {
+                "services": {
+                    "img": ["/main/icons/labor.svg", "/main/icons/electrical.svg", "/main/icons/fire.svg", "/main/icons/measurements.svg", "/main/icons/food.svg", "/main/icons/environmental.svg", "/main/icons/first.svg", "/main/icons/individual.svg"],
+                    "heading": ["Labor safety services", "Electrical safety check", "Fire safety", "Measurements of physical factors and microclimate", "Food safety", "Environmental protection and waste management", "First aid trainings", "Individual protection means"]
+                },
+                "partners": {
+                    "images":["/main/partners/image1.svg", "/main/partners/image2.svg", "/main/partners/image3.svg", "/main/partners/image4.svg", "/main/partners/image5.svg", "/main/partners/image6.svg", "/main/partners/image7.svg", "/main/partners/image8.svg", "/main/partners/image9.svg", "/main/partners/image10.svg"]
+                },
+                "cards": {
+                    "text": ["INJURIES", "PENALTIES", "COMPLIANCE RATE"],
+                    "heading": ["3 INCIDENTS", "1 INSTANCES", "98%"],
+                    "paragraph": ["of workplace injuries identified during inspections.", "of penalties incurred by companies following our inspections.", "compliance rate achieved by companies following our recommendations"]
+                },
+                "section": {
+                    "title": ["QUALITY ASSURANCE", "CONTINUOUS IMPROVEMENT"],
+                    "paragraph": ["Assurance: We are dedicated to maintaining a track record of zero injuries and penalties through our thorough inspections and recommendations.", "Our goal is to help companies achieve and maintain the highest standards of safety and compliance."]
+                }
+            },
+            "ABOUT US": {
+                "sectionOne": {
+                    "title": "Who are we",
+                    "paragraph": "We are dedicated to providing comprehensive health and safety consultation services to businesses across various industries. With a focus on creating safe and healthy workplaces, we offer a range of solutions tailored to meet the unique needs of each client."
+                },
+                "sectionTwo": {
+                    "title": "Our Services",
+                    "specialParagraphs": [
+                        "Risk Assessments:",
+                        "Safety Audits:",
+                        "Policy Development:",
+                        "Training Programs:",
+                        "Regulatory Compliance Assistance:"
+                    ],
+                    "parahraphs": [
+                        " We conduct thorough assessments to identify potential hazards and develop strategies to mitigate risks.",
+                        " Our experienced professionals perform detailed audits to evaluate safety protocols and ensure compliance with regulations.",
+                        " We assist in developing customized health and safety policies to align with industry standards and legal requirements.",
+                        " We offer engaging and informative training sessions to educate employees on safety procedures and best practices.",
+                        " We provide guidance and support to help businesses navigate complex health and safety regulations and maintain compliance."
+                    ]
+                },
+                "sectionThree": {
+                    "title": "Our Approach",
+                    "paragraph": "We believe in fostering a culture of safety within organisations. By working closely with our clients, we promote employee engagement and accountability, ultimately reducing accidents and injuries while enhancing productivity and morale."
+                },
+                "sectionFour": {
+                    "title": "Our Team",
+                    "paragraph": "Our team consists of experienced health and safety professionals, including certified safety officers, industrial hygienists, ergonomists, and environmental health specialists. With their expertise and dedication, we deliver high-quality services to meet our clients' needs."
+                },
+                "sectionFive": {
+                    "title": "Stay Informed",
+                    "paragraph": "As regulations and best practices evolve, we stay up-to-date with the latest developments in workplace health and safety. Through ongoing education and training, we ensure that our clients receive the most current guidance and support."
+                }
+            },
+            "CONTACT US": {
+                "heading": "We’d love to hear from you",
+                "text": "Our friendly team is always here to chat.",
+                "cards": {
+                    "images": [],
+                    "title": [
+                        "Find us",
+                        "Chat to support",
+                        "Call us"
+                    ],
+                    "paragraph": [
+                        "Find us on social networks.",
+                        "We’re here to help.",
+                        "Mon-Fri from 8am to 5pm."
+                    ]
+                }
+            }
+        },
+        "footer": [
+            {}
+        ]
+    }
+}
