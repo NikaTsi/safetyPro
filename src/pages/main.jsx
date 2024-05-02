@@ -38,7 +38,7 @@ function Main() {
 
                 <section className='flex flex-col items-center gap-[52px] bg-[#323232] rounded-[20px] px-[17px] py-[33px] pb-[39px]'>
                     <Cards />
-                    <Consultation width={"w-[268px]"} height={"h-[60px]"} fontSize={"text-[18px]"} />
+                    <Consultation wide={true} />
                 </section>
 
                 <Partners />
@@ -62,7 +62,7 @@ function Main() {
 
                 <div className='flex h-[400px] flex-col w-full mb-[68px] bg-background2-mobile bg-background-tint bg-no-repeat bg-cover rounded-[20px] items-center justify-around '>
                     <h1 className='text-[37px] font-bold text-[#fff] opacity-90 leading-[50px] ml-[24px]'>PROTECT YOUR TOMMOROW  <span className='text-[#f7941d]'>TODAY</span></h1>
-                    <Consultation width={"w-[268px]"} height={"h-[60px]"} fontSize={"text-[18px]"} />
+                    <Consultation wide={true} />
                 </div>
 
             </div>

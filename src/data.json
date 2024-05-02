@@ -19,28 +19,240 @@
             },
             {
                 "title": "Help",
-                "url": "/help"
+                "url": "/FAQs"
             }
         ],
         "pages": {
             "main": {
                 "services": {
-                    "img": ["/main/icons/labor.svg", "/main/icons/electrical.svg", "/main/icons/fire.svg", "/main/icons/measurements.svg", "/main/icons/food.svg", "/main/icons/environmental.svg", "/main/icons/first.svg", "/main/icons/individual.svg"],
-                    "heading": ["Labor safety services", "Electrical safety check", "Fire safety", "Measurements of physical factors and microclimate", "Food safety", "Environmental protection and waste management", "First aid trainings", "Individual protection means"]
+                    "img": [
+                        "/main/icons/labor.svg",
+                        "/main/icons/electrical.svg",
+                        "/main/icons/fire.svg",
+                        "/main/icons/measurements.svg",
+                        "/main/icons/food.svg",
+                        "/main/icons/environmental.svg",
+                        "/main/icons/first.svg",
+                        "/main/icons/individual.svg"
+                    ],
+                    "heading": [
+                        "Labor safety services",
+                        "Electrical safety check",
+                        "Fire safety",
+                        "Measurements of physical factors and microclimate",
+                        "Food safety",
+                        "Environmental protection and waste management",
+                        "First aid trainings",
+                        "Individual protection means"
+                    ]
                 },
                 "partners": {
-                    "images":["/main/partners/image1.svg", "/main/partners/image2.svg", "/main/partners/image3.svg", "/main/partners/image4.svg", "/main/partners/image5.svg", "/main/partners/image6.svg", "/main/partners/image7.svg", "/main/partners/image8.svg", "/main/partners/image9.svg", "/main/partners/image10.svg"]
+                    "images": [
+                        "/main/partners/image1.svg",
+                        "/main/partners/image2.svg",
+                        "/main/partners/image3.svg",
+                        "/main/partners/image4.svg",
+                        "/main/partners/image5.svg",
+                        "/main/partners/image6.svg",
+                        "/main/partners/image7.svg",
+                        "/main/partners/image8.svg",
+                        "/main/partners/image9.svg",
+                        "/main/partners/image10.svg"
+                    ]
                 },
                 "cards": {
-                    "text": ["INJURIES", "PENALTIES", "COMPLIANCE RATE"],
-                    "heading": ["3 INCIDENTS", "1 INSTANCES", "98%"],
-                    "paragraph": ["of workplace injuries identified during inspections.", "of penalties incurred by companies following our inspections.", "compliance rate achieved by companies following our recommendations"]
+                    "text": [
+                        "INJURIES",
+                        "PENALTIES",
+                        "COMPLIANCE RATE"
+                    ],
+                    "heading": [
+                        "3 INCIDENTS",
+                        "1 INSTANCES",
+                        "98%"
+                    ],
+                    "paragraph": [
+                        "of workplace injuries identified during inspections.",
+                        "of penalties incurred by companies following our inspections.",
+                        "compliance rate achieved by companies following our recommendations"
+                    ]
                 },
                 "section": {
-                    "title": ["QUALITY ASSURANCE", "CONTINUOUS IMPROVEMENT"],
-                    "paragraph": ["Assurance: We are dedicated to maintaining a track record of zero injuries and penalties through our thorough inspections and recommendations.", "Our goal is to help companies achieve and maintain the highest standards of safety and compliance."]
+                    "title": [
+                        "QUALITY ASSURANCE",
+                        "CONTINUOUS IMPROVEMENT"
+                    ],
+                    "paragraph": [
+                        "Assurance: We are dedicated to maintaining a track record of zero injuries and penalties through our thorough inspections and recommendations.",
+                        "Our goal is to help companies achieve and maintain the highest standards of safety and compliance."
+                    ]
                 }
             },
+            "services": [
+                {
+                    "image": "/services/labor.svg",
+                    "title": "Labor safety services",
+                    "url": "/services/labor-safety-services",
+                    "text": [
+                        "Services of accredited specialists",
+                        "Drafting of the company's labor safety and health protection policy",
+                        "Developing instructions for finding methodical assistance and conducting training for employees according to established instructions",
+                        "Detection and identification of threats, creation of a document reflecting the risks (in accordance with the periodicity established by the law)",
+                        "Determination of planning of preventive measures",
+                        "Drawing up a labor safety plan - a list of developed measures",
+                        "Assignment/allocation of responsibilities",
+                        "Safe work performance methodology",
+                        "Drawing up a rescue plan",
+                        "Incident management",
+                        "Drawing up the procedure for conducting safe activities with contractors",
+                        "Permanent remote consultation",
+                        "Object inspection, reporting - creating a document reflecting the labor safety situation after the visits of specialists and informing the customer"
+                    ],
+                    "otherServices": [
+                        {
+                            "img": "",
+                            "title": "",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "image": "/services/electrical.svg",
+                    "title": "Electrical safety check",
+                    "url": "/services/electrical-safety-check",
+                    "text": [
+                        "Accredited electrician services",
+                        "Checking the electrical network",
+                        "Inspection of electronic devices",
+                        "Measurement of potential and power on phases",
+                        "Inspection of cables",
+                        "Checking the power shield",
+                        "Measuring the resistance of the earthing contour",
+                        "Inspection of cabinets and nodes",
+                        "Preparation of the conclusion on fluency"
+                    ],
+                    "otherServices": [
+                        {
+                            "img": "",
+                            "title": "",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "image": "/services/fire.svg",
+                    "title": "Fire safety",
+                    "url": "/services/fire-safety",
+                    "text": [
+                        "Preparing an evacuation plan",
+                        "Checking the fire safety system",
+                        "Fire system installation (alarm buttons; smoke detectors; hydrants, fire panel)",
+                        "Fire extinguisher recharging service",
+                        "Installation of evacuation signs",
+                        "Practical training on fire safety"
+                    ],
+                    "otherServices": [
+                        {
+                            "img": "",
+                            "title": "",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "image": "/services/measurements.svg",
+                    "title": "Measurements of physical factors and microclimate",
+                    "url": "/services/measurements-of-physical-factors",
+                    "text": [
+                        "Service with calibrated devices",
+                        "Microclimate measurement: humidity, air speed, temperature",
+                        "Measurement of physical factors: vibration, noise, lighting",
+                        "Accredited specialist services"
+                    ],
+                    "otherServices": [
+                        {
+                            "img": "",
+                            "title": "",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "image": "/services/food.svg",
+                    "title": "Food safety",
+                    "url": "/services/food-safety",
+                    "text": [
+                        "Accredited specialist services",
+                        "Implementation of HACCP system",
+                        "Conducting trainings for employees",
+                        "Determination of product deadlines",
+                        "Laboratory testing of the product",
+                        "Planning of measures necessary for food safety"
+                    ],
+                    "otherServices": [
+                        {
+                            "img": "",
+                            "title": "",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "image": "/services/labor.svg",
+                    "title": "Environmental protection and waste management",
+                    "url": "/services/environmental-protection",
+                    "text": [
+                        "Accredited specialist services",
+                        "Drawing up a waste management plan",
+                        "Waste segregation and separation",
+                        "Development of measures provided for by existing legislation in the direction of waste management",
+                        "Rules for safe disposal of waste",
+                        "Reporting on existing threats"
+                    ],
+                    "otherServices": [
+                        {
+                            "img": "",
+                            "title": "",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "image": "/services/first.svg",
+                    "title": "First aid trainings",
+                    "url": "/services/first-aid-trainings",
+                    "text": [
+                        "Teaching by an accredited person",
+                        "Practical training",
+                        "Thorough study of the main issues of primary care",
+                        "Certificate of completion of training"
+                    ],
+                    "otherServices": [
+                        {
+                            "img": "",
+                            "title": "",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "image": "/services/individual.svg",
+                    "title": "Individual protection means",
+                    "url": "/services/individual-protection-means",
+                    "text": [
+                        "Certified protective equipment",
+                        "Selection / delivery",
+                        "Cost optimization - for your facility"
+                    ],
+                    "otherServices": [
+                        {
+                            "img": "",
+                            "title": "",
+                            "url": ""
+                        }
+                    ]
+                }
+            ],
             "ABOUT US": {
                 "sectionOne": {
                     "title": "Who are we",

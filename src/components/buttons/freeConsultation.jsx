@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function FreeConsultation({ height, width, fontSize }) {
+function FreeConsultation({ wide }) {
     return (
         <Link to={'/contact'}>
-            <button className={`bg-[#07c870] ${height} ${width} rounded-[8px] ${fontSize} leading-[28px] font-semibold text-[#ffffff] hover:bg-[#F7941D] duration-200 active:opacity-80 shadow-button`}>Free Consultation</button>
+            <button className={`bg-[#07c870] ${wide ? "w-[268px] h-[60px]" : "w-[254px] h-[64px]"} rounded-[8px] leading-[28px] font-semibold text-[18px] text-[#ffffff] hover:bg-[#F7941D] duration-200 active:opacity-80 shadow-button`}>Free Consultation</button>
         </Link>
 
     )

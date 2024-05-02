@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Main from "./pages/main";
+import Services from "./pages/services";
+import Service from "./pages/service";
+import Faqs from './pages/faqs';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -32,6 +35,9 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<Main />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/faqs' element={<Faqs />}/>
+        <Route path='/:services/:service' element={<Service />}/>
       </Routes>
     </BrowserRouter>
   );
