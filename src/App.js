@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Main from "./pages/main";
 import Services from "./pages/services";
 import Service from "./pages/service";
+import AboutUs from "./pages/aboutUs";
 import Faqs from './pages/faqs';
 
 function ScrollToTop() {
@@ -38,6 +39,7 @@ function App() {
         <Route path='/services' element={<Services />} />
         <Route path='/faqs' element={<Faqs />}/>
         <Route path='/:services/:service' element={<Service />}/>
+        <Route path='/aboutUs' element={<AboutUs />}/>
       </Routes>
     </BrowserRouter>
   );

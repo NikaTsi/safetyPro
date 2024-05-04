@@ -8,6 +8,7 @@ module.exports = {
       "Inter": ["Inter", "sans-serif"],
     },
     screens: {
+      "reg": "840px",
       "lg": "1024px",
       '3xl': '1366px',
     },
