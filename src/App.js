@@ -1,46 +1,49 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import Main from "./pages/main";
-import Services from "./pages/services";
-import Service from "./pages/service";
-import AboutUs from "./pages/aboutUs";
-import Faqs from './pages/faqs';
+import Header from './components/header';
+import Footer from './components/footer';
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  const [georgian, setGeorgian] = useState("eng");
-
-    useEffect(() => {
-        const storedLanguage = localStorage.getItem('language');
-        if (storedLanguage) {
-            setGeorgian(storedLanguage === 'geo');
-        }
-    }, []);
-
-    function handleLanguageChange() {
-        const newLanguage = georgian ? 'eng' : 'geo';
-        setGeorgian(!georgian);
-        localStorage.setItem('language', newLanguage);
-    }
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-  }, [pathname]);
-
-  return null;
-}
+const Main = lazy(() => import('./pages/main'));
+const Services = lazy(() => import('./pages/services'));
+const Service = lazy(() => import('./pages/service'));
+const AboutUs = lazy(() => import('./pages/aboutUs'));
+const Faqs = lazy(() => import('./pages/faqs'));
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, [pathname]);
+
+    return null;
+  }
+
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/faqs' element={<Faqs />}/>
-        <Route path='/:services/:service' element={<Service />}/>
-        <Route path='/aboutUs' element={<AboutUs />}/>
-      </Routes>
+      <Header />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path='/' element={<Main />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/faqs' element={<Faqs />} />
+          <Route path='/:services/:service' element={<Service />} />
+          <Route path='/aboutUs' element={<AboutUs />} />
+        </Routes>
+      </Suspense>
+      <Footer />
     </BrowserRouter>
   );
 }

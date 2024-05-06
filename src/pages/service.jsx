@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import Header from '../components/header';
-import Footer from '../components/footer';
 import OurServices from '../components/ourServices';
 import Consultation from '../components/buttons/freeConsultation';
 import SeeServices from '../components/buttons/seeServices';
@@ -21,7 +19,6 @@ function Service() {
 
   return (
     <main className='flex flex-col w-full min-h-screen font-Inter'>
-      <Header />
 
       <section className='flex flex-col px-[28px]'>
         <OurServices />
@@ -56,7 +53,6 @@ function Service() {
 
       </section>
 
-      <Footer />
     </main>
   );
 }

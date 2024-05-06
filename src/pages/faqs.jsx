@@ -1,10 +1,8 @@
 import React from 'react'
-import Header from '../components/header'
 
 export default function Faqs() {
   return (
     <div>
-      <Header />
 
       <div className='w-[128px] h-[31.5px] flex relative mb-[150px] mt-[55px] ml-[36px] lg:w-[205px] lg:h-[72px]'>
 
