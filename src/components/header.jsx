@@ -27,7 +27,7 @@ export default function Header() {
     }
 
     return (
-        <header className='flex w-full justify-center pt-6 pb-[21px] px-[28px] 3xl:pt-[36px] 3xl:pb-[36px]'>
+        <header className='flex w-full justify-center bg-[#FDFEFF] pt-6 pb-[21px] px-[28px] 3xl:pt-[36px] 3xl:pb-[36px]'>
             <div className='flex w-full justify-between items-center 3xl:w-[1138px]'>
 
                 <Link to={"/"}>

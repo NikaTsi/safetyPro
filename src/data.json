@@ -304,7 +304,34 @@
                         "Mon-Fri from 8am to 5pm."
                     ]
                 }
-            }
+            },
+            "FAQs": [
+                {
+                    "title": "Why is workplace health and safety important?",
+                    "paragraph": "Workplace health and safety is crucial for protecting the well-being of employees, reducing accidents and injuries, and ensuring compliance with legal regulations. By prioritizing health and safety, businesses can enhance productivity, morale, and reputation."
+                },
+                {
+                    "title": "What industries do you serve?",
+                    "paragraph": ""
+                },
+                {
+                    "title": "How do you conduct risk assessments?",
+                    "paragraph": ""
+                },
+                {
+                    "title": "What is involved in a safety audit?",
+                    "paragraph": ""
+                },
+                {
+                    "title": "Do you offer customized training programs?",
+                    "paragraph": ""
+                },
+                {
+                    "title": "How can I get started with your services?",
+                    "paragraph": ""
+                }
+                
+            ]
         },
         "footer": [
             {}

@@ -21,11 +21,27 @@ module.exports = {
         'main-background': 'url(./assets/main/main-background.svg)',
       },
       backgroundColor: {
-        'background-tint': "rgba(50, 50, 50, 0.96);",
-
+        'background-tint': "rgba(50, 50, 50, 0.96)",
+      },
+      animation: {
+        'popDown': 'popDown 0.2s ease-in-out',
+      },
+      keyframes: {
+        popDown: {
+          from: {
+            transform: 'translateY(-20px)',
+            display: 'hidden',
+            opacity: 0,
+          },
+          to: {
+            transform: 'translateY(0)',
+            display: 'flex',
+            opacity: 1,
+          },
+        },
       },
       boxShadow: {
-        'button': "0 1px 2px 0 rgba(16, 24, 40, 0.05);"
+        'button': "0 1px 2px 0 rgba(16, 24, 40, 0.05)",
       }
     },
   },
