@@ -8,6 +8,7 @@ const Services = lazy(() => import('./pages/services'));
 const Service = lazy(() => import('./pages/service'));
 const AboutUs = lazy(() => import('./pages/aboutUs'));
 const Faqs = lazy(() => import('./pages/faqs'));
+const Contact = lazy(() => import('./pages/contactUs'));
 
 function App() {
   function ScrollToTop() {
@@ -24,16 +25,17 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Suspense fallback={<div>Loading...</div>}>
-      <Header />
+        <Header />
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/services' element={<Services />} />
           <Route path='/faqs' element={<Faqs />} />
+          <Route path='/contact' element={<Contact />} />
           <Route path='/:services/:service' element={<Service />} />
           <Route path='/aboutUs' element={<AboutUs />} />
         </Routes>
+        <Footer />
       </Suspense>
-      <Footer />
     </BrowserRouter>
   );
 }

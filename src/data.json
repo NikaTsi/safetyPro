@@ -109,12 +109,23 @@
                         "Permanent remote consultation",
                         "Object inspection, reporting - creating a document reflecting the labor safety situation after the visits of specialists and informing the customer"
                     ],
-                    "otherServices": 
-                        {
-                            "img": ["/services/measurements.svg", "/services/food.svg", "/services/environment.svg"],
-                            "title": ["Measurements of physical factors and microclimate", "Food safety", "Environmental protection and waste management"],
-                            "url": ["/services/measurements-of-physical-factors", "/services/food-safety", "/services/environmental-protection"]
-                        }
+                    "otherServices": {
+                        "img": [
+                            "/services/measurements.svg",
+                            "/services/food.svg",
+                            "/services/environment.svg"
+                        ],
+                        "title": [
+                            "Measurements of physical factors and microclimate",
+                            "Food safety",
+                            "Environmental protection and waste management"
+                        ],
+                        "url": [
+                            "/services/measurements-of-physical-factors",
+                            "/services/food-safety",
+                            "/services/environmental-protection"
+                        ]
+                    }
                 },
                 {
                     "image": "/services/electrical.svg",
@@ -132,12 +143,23 @@
                         "Inspection of cabinets and nodes",
                         "Preparation of the conclusion on fluency"
                     ],
-                    "otherServices":
-                        {
-                            "img": ["/services/labor.svg", "/services/fire.svg", "/services/individual.svg"],
-                            "title": ["Labor safety services", "Fire safety", "Individual protection means"],
-                            "url": ["/services/labor-safety-services", "/services/fire-safety", "/services/individual-protection-means"]
-                        }
+                    "otherServices": {
+                        "img": [
+                            "/services/labor.svg",
+                            "/services/fire.svg",
+                            "/services/individual.svg"
+                        ],
+                        "title": [
+                            "Labor safety services",
+                            "Fire safety",
+                            "Individual protection means"
+                        ],
+                        "url": [
+                            "/services/labor-safety-services",
+                            "/services/fire-safety",
+                            "/services/individual-protection-means"
+                        ]
+                    }
                 },
                 {
                     "image": "/services/fire.svg",
@@ -152,12 +174,23 @@
                         "Installation of evacuation signs",
                         "Practical training on fire safety"
                     ],
-                    "otherServices":
-                        {
-                            "img": ["/services/measurements.svg", "/services/food.svg", "/services/environment.svg"],
-                            "title": ["Measurements of physical factors and microclimate", "Food safety", "Environmental protection and waste management"],
-                            "url": ["/services/measurements-of-physical-factors", "/services/food-safety", "/services/environmental-protection"]
-                        }
+                    "otherServices": {
+                        "img": [
+                            "/services/measurements.svg",
+                            "/services/food.svg",
+                            "/services/environment.svg"
+                        ],
+                        "title": [
+                            "Measurements of physical factors and microclimate",
+                            "Food safety",
+                            "Environmental protection and waste management"
+                        ],
+                        "url": [
+                            "/services/measurements-of-physical-factors",
+                            "/services/food-safety",
+                            "/services/environmental-protection"
+                        ]
+                    }
                 },
                 {
                     "image": "/services/measurements.svg",
@@ -170,12 +203,23 @@
                         "Measurement of physical factors: vibration, noise, lighting",
                         "Accredited specialist services"
                     ],
-                    "otherServices":
-                        {
-                            "img": ["/services/labor.svg", "/services/electrical.svg", "/services/fire.svg"],
-                            "title": ["Labor safety services", "Electrical safety check", "Fire safety"],
-                            "url": ["/services/labor-safety-services", "/services/electrical-safety-check", "/services/fire-safety"]
-                        }
+                    "otherServices": {
+                        "img": [
+                            "/services/labor.svg",
+                            "/services/electrical.svg",
+                            "/services/fire.svg"
+                        ],
+                        "title": [
+                            "Labor safety services",
+                            "Electrical safety check",
+                            "Fire safety"
+                        ],
+                        "url": [
+                            "/services/labor-safety-services",
+                            "/services/electrical-safety-check",
+                            "/services/fire-safety"
+                        ]
+                    }
                 },
                 {
                     "image": "/services/food.svg",
@@ -190,12 +234,23 @@
                         "Laboratory testing of the product",
                         "Planning of measures necessary for food safety"
                     ],
-                    "otherServices":
-                        {
-                            "img": ["/services/measurements.svg", "/services/environment.svg", "/services/first.svg"],
-                            "title": ["Measurements of physical factors and microclimate", "Environmental protection and waste management", "First aid training"],
-                            "url": ["/services/measurements-of-physical-factors", "/services/environmental-protection", "/services/first-aid-trainings"]
-                        }
+                    "otherServices": {
+                        "img": [
+                            "/services/measurements.svg",
+                            "/services/environment.svg",
+                            "/services/first.svg"
+                        ],
+                        "title": [
+                            "Measurements of physical factors and microclimate",
+                            "Environmental protection and waste management",
+                            "First aid training"
+                        ],
+                        "url": [
+                            "/services/measurements-of-physical-factors",
+                            "/services/environmental-protection",
+                            "/services/first-aid-trainings"
+                        ]
+                    }
                 },
                 {
                     "image": "/services/environment.svg",
@@ -210,12 +265,23 @@
                         "Rules for safe disposal of waste",
                         "Reporting on existing threats"
                     ],
-                    "otherServices":
-                        {
-                            "img": ["/services/labor.svg", "/services/fire.svg", "/services/individual.svg"],
-                            "title": ["Labor safety services", "Fire safety", "Individual protection means"],
-                            "url": ["/services/labor-safety-services", "/services/fire-safety", "/services/individual-protection-means"]
-                        }
+                    "otherServices": {
+                        "img": [
+                            "/services/labor.svg",
+                            "/services/fire.svg",
+                            "/services/individual.svg"
+                        ],
+                        "title": [
+                            "Labor safety services",
+                            "Fire safety",
+                            "Individual protection means"
+                        ],
+                        "url": [
+                            "/services/labor-safety-services",
+                            "/services/fire-safety",
+                            "/services/individual-protection-means"
+                        ]
+                    }
                 },
                 {
                     "image": "/services/first.svg",
@@ -228,12 +294,23 @@
                         "Thorough study of the main issues of primary care",
                         "Certificate of completion of training"
                     ],
-                    "otherServices":
-                        {
-                            "img": ["/services/measurements.svg", "/services/electrical.svg", "/services/labor.svg"],
-                            "title": ["Measurements of physical factors and microclimate", "Electrical safety check", "Labor safety services"],
-                            "url": ["/services/measurements-of-physical-factors", "/services/electrical-safety-check", "/services/labor-safety-services"]
-                        }
+                    "otherServices": {
+                        "img": [
+                            "/services/measurements.svg",
+                            "/services/electrical.svg",
+                            "/services/labor.svg"
+                        ],
+                        "title": [
+                            "Measurements of physical factors and microclimate",
+                            "Electrical safety check",
+                            "Labor safety services"
+                        ],
+                        "url": [
+                            "/services/measurements-of-physical-factors",
+                            "/services/electrical-safety-check",
+                            "/services/labor-safety-services"
+                        ]
+                    }
                 },
                 {
                     "image": "/services/individual.svg",
@@ -245,12 +322,23 @@
                         "Selection / delivery",
                         "Cost optimization - for your facility"
                     ],
-                    "otherServices":
-                        {
-                            "img": ["/services/measurements.svg", "/services/food.svg", "/services/environment.svg"],
-                            "title": ["Measurements of physical factors and microclimate", "Food safety", "Environmental protection and waste management"],
-                            "url": ["/services/measurements-of-physical-factors", "/services/food-safety", "/services/environmental-protection"]
-                        }
+                    "otherServices": {
+                        "img": [
+                            "/services/measurements.svg",
+                            "/services/food.svg",
+                            "/services/environment.svg"
+                        ],
+                        "title": [
+                            "Measurements of physical factors and microclimate",
+                            "Food safety",
+                            "Environmental protection and waste management"
+                        ],
+                        "url": [
+                            "/services/measurements-of-physical-factors",
+                            "/services/food-safety",
+                            "/services/environmental-protection"
+                        ]
+                    }
                 }
             ],
             "ABOUT US": {
@@ -312,25 +400,24 @@
                 },
                 {
                     "title": "What industries do you serve?",
-                    "paragraph": ""
+                    "paragraph": "We provide health and safety consultation services to a wide range of industries, including but not limited to construction, manufacturing, healthcare, hospitality, and office environments. Our solutions are tailored to meet the unique needs and regulations of each sector."
                 },
                 {
                     "title": "How do you conduct risk assessments?",
-                    "paragraph": ""
+                    "paragraph": "Our team of experienced professionals conducts comprehensive risk assessments by identifying potential hazards, evaluating their likelihood and severity, and developing strategies to mitigate risks. We use industry-standard methodologies and tools to ensure thorough and accurate assessments."
                 },
                 {
                     "title": "What is involved in a safety audit?",
-                    "paragraph": ""
+                    "paragraph": "Our safety audits involve a thorough evaluation of your organization&#39;s safety protocols, procedures, and practices. We assess compliance with regulatory requirements, identify areas for improvement, and provide actionable recommendations to enhance safety standards."
                 },
                 {
                     "title": "Do you offer customized training programs?",
-                    "paragraph": ""
+                    "paragraph": "Yes, we offer customized training programs tailored to the specific needs and requirements of your organization. Our training sessions cover a wide range of topics, including hazard recognition, emergency response, ergonomics, and workplace safety culture."
                 },
                 {
                     "title": "How can I get started with your services?",
-                    "paragraph": ""
+                    "paragraph": "Getting started is easy! Simply contact us to schedule a consultation, and one of our knowledgeable team members will work with you to understand your needs and develop a customized plan to address them."
                 }
-                
             ]
         },
         "footer": [
