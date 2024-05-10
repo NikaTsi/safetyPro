@@ -8,7 +8,7 @@ const Services = lazy(() => import('./pages/services'));
 const Service = lazy(() => import('./pages/service'));
 const AboutUs = lazy(() => import('./pages/aboutUs'));
 const Faqs = lazy(() => import('./pages/faqs'));
-const Contact = lazy(() => import('./pages/contactUs'));
+const Contact = lazy(() => import('./pages/contact'));
 
 function App() {
   function ScrollToTop() {

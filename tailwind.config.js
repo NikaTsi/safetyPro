@@ -19,6 +19,7 @@ module.exports = {
         'background2-mobile': 'url(./assets/main/background2-mobile.svg)',
         'background2-desktop': 'url(./assets/main/background2-desktop.svg)',
         'main-background': 'url(./assets/main/main-background.svg)',
+        'numeric-background': 'url(./assets/contact/numeric-background.svg)',
       },
       backgroundColor: {
         'background-tint': "rgba(50, 50, 50, 0.96)",

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import companyLogo from '../assets/footer/logo.svg'
 import EmailLogo from '../assets/footer/mail.svg'
 import PhoneLogo from '../assets/footer/phone.svg'
+import Svgs from './svgs'
 
 export default function Footer() {
   return (
@@ -15,16 +16,19 @@ export default function Footer() {
          <span className='text-[15px] leading-[28px] hidden opacity-70 text-[#fff] reg:flex'>© 2024 Treedesign  All Rights Reserved.</span>
       </div>
 
-      <div className='flex flex-col gap-[14px] w-[288.6px] h-[116px]'>
-        <div className="flex flex-row  gap-[26px]">
+      <div className='flex flex-col gap-[14px] '>
+        <div className="flex gap-[26px]">
           <img className='w-[20px]' src={EmailLogo} alt="email" />
           <span className='font-normal text-[24px] leading-[26px] text-[#ffff] opacity-90'>safety@pro.ge</span>
         </div>
-        <div className="flex flex-row  gap-[26px]">
+
+        <div className="flex gap-[26px]">
           <img className='w-[20px]' src={PhoneLogo} alt="logo" />
           <span className='font-normal text-[24px] leading-[26px] text-[#ffff] opacity-90'>(+995) 322 55 55 55</span>
         </div>
-        <div className="flex flex-row  gap-[26px] border border-red-500 h-[36px]">
+
+        <div className="flex gap-[5px]">
+          <Svgs />
         </div>
       </div>
 
