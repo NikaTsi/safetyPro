@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import data from '../../data.json'
 
 export default function ContactUs({width, border}) {
     return (

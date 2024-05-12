@@ -5,7 +5,7 @@ import data from '../data.json'
 
 function AboutUs() {
     return (
-        <main className='flex flex-col w-full font-Inter min-h-screen bg-[#F2F2F2]'>
+        <main className='flex flex-col w-full font-Inter min-h-screen bg-[#FDFEFF]'>
 
             <div className='w-[182px] h-[31px] ml-[28px] flex relative mt-[29px] lg:w-[553px] lg:h-[72px]'>
                 <div className='bg-[#F7941D] w-full h-full relative lg:w-full lg:h-full'></div>

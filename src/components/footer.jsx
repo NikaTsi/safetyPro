@@ -16,9 +16,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className='flex justify-center w-full bg-[#323232] pt-[74px] pb-[62px] reg:px-[48px] reg:py-[55px]'>
+    <footer className='flex font-Inter justify-center w-full bg-[#323232] pt-[74px] pb-[62px] reg:px-[48px] reg:py-[55px]'>
 
-      <div className='flex flex-col items-start gap-[44px] reg:flex-row reg:w-full reg:justify-between reg:items-center'>
+      <div className='flex flex-col items-start gap-[44px] reg:flex-row reg:w-full reg:justify-between reg:items-center 3xl:w-[1440px]'>
         <div className='w-[288px] flex flex-col justify-between reg:items-center reg:gap-[30px]'>
           <Link to={"/"}>
             <img src={companyLogo} alt="logo" />

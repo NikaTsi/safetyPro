@@ -18,7 +18,7 @@ function Service() {
 
 
   return (
-    <main className='flex flex-col w-full min-h-screen font-Inter'>
+    <main className='flex flex-col w-full min-h-screen font-Inter bg-[#FDFEFF]'>
 
       <section className='flex flex-col px-[28px]'>
         <OurServices />
@@ -44,7 +44,7 @@ function Service() {
             <div className='flex flex-col'>
               <img className='w-full h-[252px] object-cover rounded-[27px]' src={require(`../assets${item}`)} alt={serviceData.title} />
               <h1 className='text-[23px] font-semibold leading-[27px] text-[#101828] pt-[21px] pb-[25px]'>{serviceData.otherServices.title[index]}</h1>
-              <Link to={serviceData.otherServices.url[index]}>
+              <Link className='w-[116px]' to={serviceData.otherServices.url[index]}>
                 <SeeServices />
               </Link>
             </div>

@@ -44,6 +44,16 @@
                         "Environmental protection and waste management",
                         "First aid trainings",
                         "Individual protection means"
+                    ],
+                    "urls": [
+                        "/services/labor-safety-services",
+                        "/services/electrical-safety-check",
+                        "/services/fire-safety",
+                        "/services/measurements-of-physical-factors",
+                        "/services/food-safety",
+                        "/services/environmental-protection",
+                        "/services/first-aid-trainings",
+                        "/services/individual-protection-means"
                     ]
                 },
                 "partners": {

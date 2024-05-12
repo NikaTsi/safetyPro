@@ -4,15 +4,17 @@ module.exports = {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    fontFamily: {
-      "Inter": ["Inter", "sans-serif"],
-    },
-    screens: {
-      "reg": "840px",
-      "lg": "1024px",
-      '3xl': '1366px',
-    },
     extend: {
+      fontFamily: {
+        "Inter": ["Inter", "sans-serif"],
+      },
+      screens: {
+        "md": "768px",
+        "reg": "840px",
+        "lg": "1024px",
+        "3xl": '1440px',
+        "4xl": '1496px',
+      },
       backgroundImage: {
         'background1-desktop': 'url(./assets/main/background1-desktop.svg)',
         'background1-mobile': 'url(./assets/main/background1-mobile.svg)',
@@ -26,18 +28,43 @@ module.exports = {
       },
       animation: {
         'popDown': 'popDown 0.2s ease-in-out',
+        'headerAnimationOpen': 'headerAnimationOpen 0.3s ease-in-out',
       },
       keyframes: {
         popDown: {
           from: {
             transform: 'translateY(-20px)',
-            display: 'hidden',
+            display: 'none',
             opacity: 0,
           },
           to: {
             transform: 'translateY(0)',
             display: 'flex',
             opacity: 1,
+          },
+        },
+        headerAnimationOpen: {
+          from: {
+            transform: 'translateY(-100%)',
+            display: 'none',
+            opacity: 0,
+          },
+          to: {
+            transform: 'translateY(0)',
+            display: 'flex',
+            opacity: 1,
+          },
+        },
+        headerAnimationClose: {
+          from: {
+            transform: 'translateY(0)',
+            display: 'flex',
+            opacity: 1,
+          },
+          to: {
+            transform: 'translateY(-100%)',
+            display: 'none',
+            opacity: 0,
           },
         },
       },
@@ -47,4 +74,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

@@ -9,8 +9,8 @@ function Services({ }) {
 
 
   return (
-    <main className='flex font-Inter flex-col w-full min-h-screen'>
-      
+    <main className='flex font-Inter flex-col w-full min-h-screen bg-[#FDFEFF]'>
+
       <div className='flex flex-col w-full px-[28px] mb-[47px]'>
         <OurServices main={true} />
 
@@ -21,9 +21,9 @@ function Services({ }) {
 
               <div className='flex flex-col justify-between h-[100px] w-full mt-[20px]'>
                 <h1 className='w-[333px] text-[23px] leading-[27px] text-[#101828] font-semibold 3xl:text-[24px] 3xl:leading-[28px]'>{item.title}</h1>
-                <Link to={item.url}>
-                  <SeeServices />
-                </Link>
+                  <Link className='w-[116px]' to={item.url}>
+                    <SeeServices />
+                  </Link>
               </div>
 
             </div>
