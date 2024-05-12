@@ -3,6 +3,14 @@ import data from '../data.json'
 import Svgs from '../components/svgs'
 
 function Contact() {
+
+    const handleEmailClick = () => {
+        window.location.href = `mailto:safetyproge@gmail.com`;
+    };
+
+    const arrayOfInfo = [<Svgs />, "safetyproge@gmail.com", "+995 505 05 27 37"]
+
+
     return (
         <main className='flex flex-col w-full font-Inter px-[28px] bg-[#FDFEFF]'>
 
@@ -11,31 +19,28 @@ function Contact() {
                 <h1 className='absolute text-[28px] font-bold z-10 bottom-[7.3px] left-[15px] lg:text-[67px] lg:leading-[26px] lg:-top-[5px]'>CONTACT US</h1>
             </div>
 
-            <div className='flex flex-col w-full px-[15px] pt-[40px] pb-[20px] bg-numeric-background rounded-[20px]'>
+            <div className='flex flex-col w-full px-[15px] pt-[40px] pb-[20px] bg-background-tint bg-numeric-background bg-cover bg-no-repeat rounded-[20px] overflow-clip'>
                 <div>
                     <h1 className='text-[#f7941d] text-[24px] font-bold'>We’d love to hear from you</h1>
                     <p className='text-[20px] font-bold leading-[30px] text-[#fff] mt-[8px] mb-[32px]'>Our friendly team is always here to chat.</p>
                 </div>
 
-                <div className='flex flex-col gap-4 w-full rounded-[20px]'>
+                <div className=' flex flex-col gap-4 w-full'>
                     {data.eng.pages['CONTACT US'].cards.map((item, index) => (
-                        <div>
+                        <div className=' p-[24px] rounded-[28px] bg-gray-100 bg-opacity-30'>
                             <img src={require(`../assets${item.images}`)} key={index} />
-                            <h1 className='text-[20px] leading-[30px] font-bold text-[#f2f2f2]'>{item.title}</h1>
-                            <p className='text-[16px] leading-[24px] font-bold text-[#f2f2f2]'>{item.paragraph}</p>
+                            <h1 className='text-[20px] leading-[30px] font-bold text-[#f2f2f2] pt-[64px]'>{item.title}</h1>
+                            <p className='text-[16px] leading-[24px] font-semibold text-[#f2f2f2]'>{item.paragraph}</p>
+                            <span className='flex gap-[20px] text-[#f7941d] text-[16px] font-bold leading-[24px] mt-[24px]'>{arrayOfInfo[index]}</span>
                         </div>
                     ))}
                 </div>
 
             </div>
 
-                <div className='flex gap-[5px]'>
-                    {<Svgs />}
-                </div>
         </main>
     )
 
-    /// mailorphone = className='text-[16px] font-bold text-[#f7941d] leading-[24px]'////
-}
 
+}
 export default Contact
