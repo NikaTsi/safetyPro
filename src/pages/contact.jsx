@@ -16,7 +16,7 @@ function Contact() {
 
             <div className='flex flex-col w-full items-center 4xl:w-[1440px]'>
                 <div className='flex w-full justify-start'>
-                    <div className='w-[243px] h-[31.5px] flex relative mb-[32px] mt-[27px] lg:w-[553px] lg:h-[72px] 3xl:mt-[90px]'>
+                    <div className='w-[243px] h-[31.5px] flex relative mb-[32px] mt-[27px] lg:w-[553px] lg:h-[72px] 3xl:mt-[60px]'>
                         <div className='bg-[#F7941D] bg-opacity-60 w-full h-full relative'></div>
                         <h1 className='text-[#323232] absolute text-[28px] font-bold z-10 bottom-[7.3px] left-[15px] lg:text-[67px] lg:leading-[26px] lg:-top-[5px]'>CONTACT US</h1>
                     </div>

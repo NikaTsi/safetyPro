@@ -37,9 +37,7 @@ export default function Footer() {
             <span onClick={handlePhoneClick} className='font-normal text-[24px] leading-[26px] text-[#ffff] opacity-90 cursor-pointer hover:text-[#F7941D] hover:underline'>(+995) 505 05 27 37</span>
           </div>
 
-          <div className="flex gap-[20px]">
             <Svgs />
-          </div>
         </div>
 
         <span className='text-[15px] leading-[28px] opacity-70 text-[#fff] reg:hidden'>© 2024 Treedesign  All Rights Reserved.</span>

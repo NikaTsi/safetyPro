@@ -9,9 +9,12 @@ module.exports = {
         "Inter": ["Inter", "sans-serif"],
       },
       screens: {
+        "sm": "530px",
+        "tb": "600px",
         "md": "768px",
         "reg": "840px",
         "lg": "1024px",
+        "2xl": "1240px",
         "3xl": '1440px',
         "4xl": '1496px',
       },
