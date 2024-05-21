@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         "Inter": ["Inter", "sans-serif"],
+        "FiraGO": ["FiraGO", "sans-serif"],
       },
       screens: {
         "sm": "530px",

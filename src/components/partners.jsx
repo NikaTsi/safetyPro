@@ -10,7 +10,7 @@ export default function Partners() {
       </div>
 
       <div className='grid grid-cols-2 items-center justify-center gap-x-[30px] gap-y-[25px] mt-[29px] mb-[67px]'>
-        {data.eng.pages.main.partners.images.map((item, index) => (
+        {data.pages.main.partners.images.map((item, index) => (
           <div className='flex justify-center items-center'>
             <img src={require(`../assets${item}`)} alt='partners' key={index} />
           </div>

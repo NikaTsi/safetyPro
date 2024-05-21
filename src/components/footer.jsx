@@ -29,12 +29,12 @@ export default function Footer() {
         <div className='flex flex-col gap-[14px]'>
           <div className="flex gap-[26px]">
             <img className='w-[20px]' src={EmailLogo} alt="email" />
-            <span onClick={handleEmailClick} className='font-normal text-[24px] leading-[26px] text-[#ffff] opacity-90 cursor-pointer hover:text-[#F7941D] hover:underline'>safetyproge@gmail.com</span>
+            <span onClick={handleEmailClick} className='font-normal text-[20px] leading-[26px] text-[#ffff] opacity-90 cursor-pointer hover:text-[#F7941D] hover:underline'>safetyproge@gmail.com</span>
           </div>
 
           <div className=" flex gap-[26px]">
             <img className='w-[20px]' src={PhoneLogo} alt="logo" />
-            <span onClick={handlePhoneClick} className='font-normal text-[24px] leading-[26px] text-[#ffff] opacity-90 cursor-pointer hover:text-[#F7941D] hover:underline'>(+995) 505 05 27 37</span>
+            <span onClick={handlePhoneClick} className='font-normal text-[20px] leading-[26px] text-[#ffff] opacity-90 cursor-pointer hover:text-[#F7941D] hover:underline'>(+995) 505 05 27 37</span>
           </div>
 
             <Svgs />

@@ -19,32 +19,32 @@ function AboutUs() {
                         <img className='tb:w-[280px] md:w-auto 4xl:w-[450px] 4xl:absolute top-[-158px] right-[-60px]' src={aboutUsImage} />
 
                         <div className='flex flex-col w-full gap-[20px] reg:w-[425px] lg:w-[525px] 4xl:w-[800px]'>
-                            <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.eng.pages['ABOUT US'].sectionOne.title}</h1>
-                            <p className='text-[16px] font-regular lg:text-[20px] lg:leading-[33px]'>{data.eng.pages['ABOUT US'].sectionOne.paragraph}</p>
+                            <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.pages.aboutUs.sectionOne.title}</h1>
+                            <p className='text-[16px] font-regular lg:text-[20px] lg:leading-[33px]'>{data.pages.aboutUs.sectionOne.paragraph}</p>
                         </div>
                     </div>
 
                     <div className='flex flex-col w-full gap-[20px] lg:gap-[25px]'>
-                        <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.eng.pages['ABOUT US'].sectionTwo.title}</h1>
-                        {data.eng.pages['ABOUT US'].sectionTwo.specialParagraphs.map((item, index) => (
-                            <p className='text-[16px] font-regular lg:text-[20px] lg:leading-[28px]'><span className='font-bold text-[#f7941d]'>{item}</span>{data.eng.pages['ABOUT US'].sectionTwo.paragraphs[index]}</p>
+                        <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.pages.aboutUs.sectionTwo.title}</h1>
+                        {data.pages.aboutUs.sectionTwo.specialParagraphs.map((item, index) => (
+                            <p className='text-[16px] font-regular lg:text-[20px] lg:leading-[28px]'><span className='font-bold text-[#f7941d]'>{item}</span>{data.pages.aboutUs.sectionTwo.paragraphs[index]}</p>
                         ))}
 
                     </div>
 
                     <div className='flex flex-col w-full gap-[20px] lg:gap-[25px]'>
-                        <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.eng.pages['ABOUT US'].sectionThree.title}</h1>
-                        <p className='text-[16px] font-regular lg:text-[20px] lg:leading-[34px]'>{data.eng.pages['ABOUT US'].sectionThree.paragraph}</p>
+                        <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.pages.aboutUs.sectionThree.title}</h1>
+                        <p className='text-[16px] font-regular lg:text-[20px] lg:leading-[34px]'>{data.pages.aboutUs.sectionThree.paragraph}</p>
                     </div>
 
                     <div className='flex flex-col w-full gap-[20px] lg:gap-[25px]'>
-                        <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.eng.pages['ABOUT US'].sectionFour.title}</h1>
-                        <p className='text-[16px] font-regular lg:text-[20px] lg:leading-[34px]'>{data.eng.pages['ABOUT US'].sectionFour.paragraph}</p>
+                        <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.pages.aboutUs.sectionFour.title}</h1>
+                        <p className='text-[16px] font-regular lg:text-[20px] lg:leading-[34px]'>{data.pages.aboutUs.sectionFour.paragraph}</p>
                     </div>
 
                     <div className='flex flex-col w-full gap-[20px] lg:gap-[25px]'>
-                        <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.eng.pages['ABOUT US'].sectionFive.title}</h1>
-                        <p className='text-[16px] font-regular lg:text-[20px]'>{data.eng.pages['ABOUT US'].sectionFive.paragraph}</p>
+                        <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.pages.aboutUs.sectionFive.title}</h1>
+                        <p className='text-[16px] font-regular lg:text-[20px]'>{data.pages.aboutUs.sectionFive.paragraph}</p>
                     </div>
 
                     <div className='flex justify-center lg:justify-start'>

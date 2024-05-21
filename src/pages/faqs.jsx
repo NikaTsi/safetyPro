@@ -45,7 +45,7 @@ export default function Faqs() {
         </div>
 
         <div className='flex flex-col w-full gap-[47px] mt-[30px] 3xl:gap-[24px] 4xl:w-[1440px]'>
-          {data.eng.pages.FAQs.map((item, index) => (
+          {data.pages.FAQs.map((item, index) => (
             <div className={`flex flex-col w-full gap-[8px]  ${index !== 5 ? "3xl:border-b-2 3xl:pb-[32px] 3xl:border-[#f9fafb]" : ""}`} key={index}>
 
               <div className='flex w-full gap-[px] justify-between items-start'>

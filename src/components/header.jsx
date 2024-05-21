@@ -8,34 +8,24 @@ import engc from '../assets/header/eng-color.svg';
 import NavigationLinks from './navigationLinks';
 import data from '../data.json';
 import Contact from '../components/buttons/contactUs'
+import { useLanguage } from '../useLanguage';
 
 export default function Header() {
     const [isHovered, setIsHovered] = useState(false);
-    const [georgian, setGeorgian] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+
+    const {georgian, handleLanguageChange} = useLanguage()
 
     const handleOpen = () => {
         setIsOpen(!isOpen);
     }
+
     const handleClose = () => {
         setIsOpen(false);
     }
 
-    useEffect(() => {
-        const storedLanguage = localStorage.getItem('language');
-        if (storedLanguage) {
-            setGeorgian(storedLanguage === 'geo');
-        }
-    }, []);
-
-    function handleLanguageChange() {
-        const newLanguage = georgian ? 'eng' : 'geo';
-        setGeorgian(!georgian);
-        localStorage.setItem('language', newLanguage);
-    }
-
     return (
-        <header className={`flex font-Inter relative w-full justify-center bg-[#FDFEFF] pt-6 pb-[21px] px-[28px] 3xl:pt-[36px] 3xl:pb-[36px] z-[1000] ${isOpen ? "sticky top-0 left-0" : ""}`}>
+        <header className={`flex relative w-full justify-center bg-[#FDFEFF] pt-6 pb-[21px] px-[28px] 3xl:pt-[36px] 3xl:pb-[36px] z-[1000] ${georgian ? "font-FiraGO" : "font-Inter"} ${isOpen ? "sticky top-0 left-0" : ""}`}>
             <div className='flex w-full justify-between items-center 3xl:w-[1440px]'>
 
                 <Link to={"/"} onClick={handleClose}>
@@ -43,12 +33,12 @@ export default function Header() {
                 </Link>
 
                 <div className='hidden gap-10 lg:flex'>
-                    <NavigationLinks data={data.eng.navigation} />
+                    <NavigationLinks data={data.navigation} language={georgian} />
                 </div>
 
                 <div className='flex items-center gap-[23px]'>
                     <div className="hidden lg:flex">
-                        <Contact width={"w-[121px]"} />
+                        <Contact width={"w-[121px]"} language={georgian} />
                     </div>
 
                     <div className={`w-[30px] h-[30px] ${georgian ? "flex" : "hidden"}`} onClick={handleLanguageChange} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
@@ -67,16 +57,16 @@ export default function Header() {
                     </div>
 
                     {isOpen && (
-                        <div className={`flex flex-col animate-headerAnimationOpen absolute top-[70px] left-0 z-[100] h-[350px] justify-center items-center rounded-b-[20px] w-full gap-[20px] bg-[#323232] ${isOpen ? "" : "animate-headerAnimationClose"} lg:hidden`}>
+                        <div className={`flex flex-col animate-headerAnimationOpen absolute top-[70px] left-0 z-[100] h-[350px] justify-center items-center rounded-b-[20px] w-full gap-[30px] bg-[#323232] ${isOpen ? "" : "animate-headerAnimationClose"} lg:hidden`}>
                             {
-                                data.eng.navigation.map(item => (
+                                data.navigation.map(item => (
                                     <Link onClick={handleClose} key={item.url} to={`${item.url}`} className={`font-semibold text-[16px] leading-[26px] hover:text-[#f7941d] text-[#FFFFFF] cursor-pointer`}>
-                                        {item.title}
+                                        {georgian ? item.titleGeo : item.title}
                                     </Link>
                                 ))
                             }
                             <Link onClick={handleClose} to={"/contact"}>
-                                <button className={`bg-[#f7941d] text-[#ffffff] rounded-[8px] h-[44px] text-[16px] font-semibold leading-[24px] w-[121px] hover:bg-[#323232] duration-300 active:opacity-80 shadow-button border border-[#f7941d]`}>Contact us</button>
+                                <button className={`bg-[#f7941d] text-[#ffffff] rounded-[8px] h-[44px] text-[16px] font-bold leading-[24px] w-[121px] hover:bg-[#323232] duration-300 active:opacity-80 shadow-button border border-[#f7941d]`}>{georgian ? "მოგვწერეთ" : "Contact us"}</button>
                             </Link>
                         </div>
                     )}

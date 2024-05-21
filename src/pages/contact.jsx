@@ -29,7 +29,7 @@ function Contact() {
                     </div>
 
                     <div className='flex flex-col gap-4 w-full lg:flex-row lg:gap-[3%] lg:items-center lg:justify-between'>
-                        {data.eng.pages['CONTACT US'].cards.map((item, index) => (
+                        {data.pages['CONTACT US'].cards.map((item, index) => (
                             <div className='p-[24px] rounded-[28px] bg-gray-100 bg-opacity-30 lg:w-full'>
                                 <img src={require(`../assets${item.images}`)} key={index} />
                                 <h1 className='text-[20px] leading-[30px] font-bold text-[#f2f2f2] pt-[64px]'>{item.title}</h1>

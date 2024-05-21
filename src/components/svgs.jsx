@@ -17,7 +17,7 @@ export default function Svgs() {
             {qrImg && 
             <img className='absolute top-[-300px] object-cover' src={qr} />
             }
-            {data.eng.footer.map((item, i) => (
+            {data.footer.map((item, i) => (
                 <Link to={item.href} target={`item${i}`} key={i} onClick={(e) => {
                     if (i === 1) {
                         handlePopUp(e)

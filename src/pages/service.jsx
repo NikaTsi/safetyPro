@@ -5,6 +5,7 @@ import Consultation from '../components/buttons/freeConsultation';
 import SeeServices from '../components/buttons/seeServices';
 import data from '../data.json';
 
+
 function Service() {
   const { services, service } = useParams();
   const [serviceData, setServiceData] = useState(null);
@@ -12,7 +13,7 @@ function Service() {
 
 
   useEffect(() => {
-    const product = data.eng.pages[services]?.find(item => item.url === `/${services}/${service}`);
+    const product = data.pages[services]?.find(item => item.url === `/${services}/${service}`);
     setServiceData(product);
   }, [service, services]);
 
@@ -25,7 +26,7 @@ function Service() {
 
         {serviceData && (
           <div className="flex flex-col gap-[31px] lg:gap-[35px]">
-            <img className='w-full h-[252px] object-cover rounded-[27px]' src={require(`../assets${serviceData.image}`)} alt={serviceData.title} />
+            <img className='flex w-full h-[252px] rounded-[27px] object-cover lg:h-[400px]' src={require(`../assets${serviceData.image}`)} alt={serviceData.title} />
             <h1 className='text-[24px] font-semibold leading-[27px] text-[#f7941d] lg:hidden'>{serviceData.title}</h1>
             <div className='flex w-full justify-center lg:flex-row lg:justify-between lg:items-center'>
               <h1 className='text-[24px] hidden font-semibold leading-[27px] text-[#f7941d] lg:text-[40px] lg:flex'>{serviceData.title}</h1>

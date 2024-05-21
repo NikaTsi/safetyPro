@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NavigationLinks = ({ data, text }) => (
+const NavigationLinks = ({ data, text, language }) => (
     data.map(item => (
-        <Link  key={item.url} to={`${item.url}`} className={`font-semibold text-[16px] leading-[26px] hover:text-[#f7941d] cursor-pointer ${text ? "text-[#FFFFFF]" : "text-[#323232]"}`}>
-            {item.title}
+        <Link  key={item.url} to={`${item.url}`} className={`font-bold text-[16px] leading-[26px] hover:text-[#f7941d] cursor-pointer ${text ? "text-[#FFFFFF]" : "text-[#323232]"}`}>
+            {language ? item.titleGeo : item.title}
         </Link>
     ))
 );

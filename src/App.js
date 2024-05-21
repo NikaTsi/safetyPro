@@ -1,5 +1,5 @@
-import React, { useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
+import { BrowserRouter, Routes, Route, useLocation, json } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
 
@@ -30,9 +30,9 @@ function App() {
           <Route path='/' element={<Main />} />
           <Route path='/services' element={<Services />} />
           <Route path='/faqs' element={<Faqs />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path='/contact' element={<Contact />}  />
           <Route path='/:services/:service' element={<Service />} />
-          <Route path='/aboutUs' element={<AboutUs />} />
+          <Route path='/aboutUs' element={<AboutUs  />} />
         </Routes>
         <Footer />
       </Suspense>
