@@ -9,6 +9,12 @@ module.exports = {
         "Inter": ["Inter", "sans-serif"],
         "FiraGO": ["FiraGO", "sans-serif"],
       },
+      backdropBlur: {
+        '24': '24px',
+      },
+      colors: {
+        'white-15': 'rgba(255, 255, 255, 0.15)',
+      },
       screens: {
         "sm": "530px",
         "tb": "600px",
@@ -20,12 +26,11 @@ module.exports = {
         "4xl": '1496px',
       },
       backgroundImage: {
-        'background1-desktop': 'url(./assets/main/background1-desktop.svg)',
-        'background1-mobile': 'url(./assets/main/background1-mobile.svg)',
-        'background2-mobile': 'url(./assets/main/background2-mobile.svg)',
-        'background2-desktop': 'url(./assets/main/background2-desktop.svg)',
+        'background1': 'url(./assets/main/background1.png)',
+        'background2': 'url(./assets/main/background2.png)',
         'main-background': 'url(./assets/main/main-background.svg)',
-        'numeric-background': 'url(./assets/contact/numeric-background.svg)',
+        'statistics': 'url(./assets/main/statistics.png)',
+        'numeric-background': 'url(./assets/contact/numeric-background.png)',
       },
       backgroundColor: {
         'background-tint': "rgba(50, 50, 50, 0.96)",
@@ -77,5 +82,13 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.backdrop-blur-24': {
+          'backdrop-filter': 'blur(24px)',
+        },
+      });
+    },
+  ],
 };

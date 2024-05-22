@@ -1,6 +1,6 @@
 import React from 'react'
 import FreeConsultation from '../components/buttons/freeConsultation'
-import aboutUsImage from '../assets/aboutUs/aboutUs.svg'
+import aboutUsImage from '../assets/aboutUs/aboutUs.png'
 import data from '../data.json'
 
 function AboutUs() {
@@ -15,8 +15,8 @@ function AboutUs() {
 
                 <section className='flex relative flex-col w-full px-[28px] gap-[50px] mt-[43px] pb-[31px] lg:mt-0 4xl:bg-[#F2F2F2] 4xl:px-[40px] 4xl:py-[60px] 4xl:rounded-[28px] 4xl:mb-[80px] 4xl:w-[1380px]'>
 
-                    <div className='flex flex-col w-full gap-[50px] tb:flex-row-reverse tb:gap-[20px] md:justify-between 4xl:flex-row'>
-                        <img className='tb:w-[280px] md:w-auto 4xl:w-[450px] 4xl:absolute top-[-158px] right-[-60px]' src={aboutUsImage} />
+                    <div className='flex flex-col w-full gap-[50px] tb:flex-row-reverse tb:items-center tb:gap-[20px] md:justify-between 4xl:flex-row'>
+                        <img className='w-full rounded-[28px] tb:w-[50%] reg:w-[40%] 4xl:w-[450px] 4xl:absolute top-[-126px] right-[-60px]' src={aboutUsImage} />
 
                         <div className='flex flex-col w-full gap-[20px] reg:w-[425px] lg:w-[525px] 4xl:w-[800px]'>
                             <h1 className='text-[24px] font-bold leading-[26px] text-[#323232] lg:text-[36px]'>{data.pages.aboutUs.sectionOne.title}</h1>

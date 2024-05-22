@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import faqsimg from '../assets/faqs/faqsImg.svg'
+import FAQs from '../assets/faqs/FAQS.png'
 import data from '../data.json'
 
 export default function Faqs() {
@@ -14,12 +14,12 @@ export default function Faqs() {
     <main className='flex font-Inter flex-col w-full min-h-screen px-[28px] bg-[#FDFEFF] '>
       <div className='flex flex-col lg:items-center'>
 
-        <div className='flex flex-col w-full tb:flex-row  lg:mt-[60px] 4xl:w-[1440px]'>
+        <div className='flex flex-col w-full tb:flex-row lg:mt-[60px] 4xl:w-[1440px]'>
 
           <div className='flex flex-col w-full items-start'>
 
-            <div className='w-[128px] h-[31.5px] flex relative mb-[20px] mt-[27px] lg:w-[205px] lg:h-[72px]'>
-              <div className='bg-green-500 bg-opacity-60 w-full h-full relative'></div>
+            <div className='w-[128px] h-[31.5px] flex relative mb-[20px] mt-[27px] lg:mt-0 lg:w-[205px] lg:h-[72px]'>
+              <div className='bg-[#07C870] w-full h-full relative'></div>
               <h1 className='absolute text-[28px] font-bold z-10 bottom-[7.3px] left-[15px] lg:text-[67px] lg:leading-[26px] lg:-top-[5px]'>FAQs</h1>
             </div>
 
@@ -34,7 +34,7 @@ export default function Faqs() {
           </div>
 
           <div className='flex w-full justify-center mt-[40px] mb-[11px] tb:m-0 reg:justify-end'>
-            <img className='reg:w-[392px] 2xl:w-[462px]' src={faqsimg} alt="FAQs image" />
+            <img className='reg:w-[392px] 2xl:w-[462px]' src={FAQs} alt="FAQs image" />
           </div>
 
         </div>
