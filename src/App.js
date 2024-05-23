@@ -2,6 +2,7 @@ import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, json } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
+import Loader from './components/loader'
 
 const Main = lazy(() => import('./pages/main'));
 const Services = lazy(() => import('./pages/services'));
@@ -24,7 +25,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Header />
         <Routes>
           <Route path='/' element={<Main />} />

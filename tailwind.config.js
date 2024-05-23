@@ -79,16 +79,8 @@ module.exports = {
       },
       boxShadow: {
         'button': "0 1px 2px 0 rgba(16, 24, 40, 0.05)",
+        'line': "0px 4px 4px 1px rgba(88, 89, 91, 0.35)",
       }
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      addUtilities({
-        '.backdrop-blur-24': {
-          'backdrop-filter': 'blur(24px)',
-        },
-      });
-    },
-  ],
 };

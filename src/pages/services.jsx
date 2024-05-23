@@ -7,11 +7,6 @@ import data from '../data.json'
 
 
 function Services() {
-
-  const LazyLoadedImage = ({ src, alt }) => {
-    return <img src={src} alt={alt} loading="lazy" />;
-  };
-
   return (
     <main className='flex font-Inter flex-col w-full min-h-screen bg-[#FDFEFF] 4xl:items-center'>
 

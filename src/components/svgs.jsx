@@ -5,7 +5,7 @@ import data from '../data.json';
 import qr from '../assets/footer/pr.png';
 
 export default function Svgs() {
-    const arrayOfsize = ["10", "16", "17"];
+    const arrayOfsize = ["10", "17", "18"];
     const [qrImg, setQrImg] = useState(false);
 
     const isMobile = useMediaQuery({ query: '(max-width: 1023px)' });

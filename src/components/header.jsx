@@ -25,7 +25,7 @@ export default function Header() {
     }
 
     return (
-        <header className={`flex relative w-full justify-center bg-[#FDFEFF] pt-6 pb-[21px] px-[28px] 3xl:pt-[36px] 3xl:pb-[36px] z-[1000] ${georgian ? "font-FiraGO" : "font-Inter"} ${isOpen ? "sticky top-0 left-0" : ""}`}>
+        <header className={`flex relative w-full justify-center bg-[#FDFEFF] pt-6 pb-[21px] px-[28px] 3xl:pt-[36px] 3xl:pb-[36px] z-[100] ${georgian ? "font-FiraGO" : "font-Inter"} ${isOpen ? "sticky top-0 left-0" : ""}`}>
             <div className='flex w-full justify-between items-center 3xl:w-[1440px]'>
 
                 <Link to={"/"} onClick={handleClose}>

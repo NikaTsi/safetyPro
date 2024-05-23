@@ -16,14 +16,14 @@ export default function Footer() {
   };
 
   return (
-    <footer className='flex font-Inter justify-center w-full bg-[#323232] pt-[74px] pb-[62px] reg:px-[48px] reg:py-[55px]'>
+    <footer className='flex font-Inter justify-center w-full bg-[#323232] pt-[74px] pb-[62px] md:px-[48px] md:py-[70px]'>
 
-      <div className='flex flex-col items-start gap-[44px] reg:flex-row reg:w-full reg:justify-between reg:items-center 3xl:w-[1440px]'>
-        <div className='w-[288px] flex flex-col justify-between reg:items-center reg:gap-[30px]'>
+      <div className='flex flex-col items-start gap-[44px] md:flex-row md:w-full md:justify-between md:items-center 3xl:w-[1440px]'>
+        <div className='w-[288px] flex flex-col justify-between md:items-center md:gap-[30px]'>
           <Link to={"/"}>
             <img src={companyLogo} alt="logo" />
           </Link>
-          <span className='text-[15px] leading-[28px] hidden opacity-70 text-[#fff] reg:flex'>© 2024 Treedesign  All Rights Reserved.</span>
+          <span className='text-[15px] leading-[28px] hidden opacity-70 text-[#fff] md:flex'>© 2024 Treedesign  All Rights Reserved.</span>
         </div>
 
         <div className='flex flex-col gap-[14px]'>
@@ -40,7 +40,7 @@ export default function Footer() {
             <Svgs />
         </div>
 
-        <span className='text-[15px] leading-[28px] opacity-70 text-[#fff] reg:hidden'>© 2024 Treedesign  All Rights Reserved.</span>
+        <span className='text-[15px] leading-[28px] opacity-70 text-[#fff] md:hidden'>© 2024 Treedesign  All Rights Reserved.</span>
       </div>
 
 

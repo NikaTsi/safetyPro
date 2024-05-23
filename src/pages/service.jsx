@@ -10,8 +10,6 @@ function Service() {
   const { services, service } = useParams();
   const [serviceData, setServiceData] = useState(null);
 
-
-
   useEffect(() => {
     const product = data.pages[services]?.find(item => item.url === `/${services}/${service}`);
     setServiceData(product);
@@ -28,7 +26,7 @@ function Service() {
           <div className="flex flex-col gap-[31px] lg:gap-[35px]">
             <img className='flex w-full h-[252px] rounded-[27px] object-cover lg:h-[400px]' src={require(`../assets${serviceData.image}`)} alt={serviceData.title} />
             <h1 className='text-[24px] font-semibold leading-[27px] text-[#f7941d] lg:hidden'>{serviceData.title}</h1>
-            <div className='flex w-full justify-center lg:flex-row lg:justify-between lg:items-center'>
+            <div className='flex w-full justify-center sm:flex-row sm:justify-between sm:items-center'>
               <h1 className='text-[24px] hidden font-semibold leading-[27px] text-[#f7941d] lg:text-[40px] lg:flex'>{serviceData.title}</h1>
               <Consultation />
             </div>
