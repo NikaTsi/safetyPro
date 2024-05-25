@@ -17,6 +17,5 @@ export const useLanguage = () => {
     }
 
 
-
-    return { georgian, handleLanguageChange }
+    return { georgian, setGeorgian, handleLanguageChange }
 }

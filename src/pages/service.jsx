@@ -4,17 +4,20 @@ import OurServices from '../components/ourServices';
 import Consultation from '../components/buttons/freeConsultation';
 import SeeServices from '../components/buttons/seeServices';
 import data from '../data.json';
-
+import Errorpage from '../pages/errorpage';
 
 function Service() {
   const { services, service } = useParams();
   const [serviceData, setServiceData] = useState(null);
 
   useEffect(() => {
-    const product = data.pages[services]?.find(item => item.url === `/${services}/${service}`);
+    const product = data.pages.services?.find(item => item.url === `/services/${service}`);
     setServiceData(product);
   }, [service, services]);
 
+  if (!serviceData) {
+    return <Errorpage />;
+  }
 
   return (
     <main className='flex flex-col w-full min-h-screen font-Inter 4xl:items-center bg-[#FDFEFF]'>

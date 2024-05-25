@@ -1,8 +1,9 @@
-import React, { useEffect, useState, lazy, Suspense } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, json } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
 import Loader from './components/loader'
+import Errorpage from './pages/errorpage'
 
 const Main = lazy(() => import('./pages/main'));
 const Services = lazy(() => import('./pages/services'));
@@ -32,8 +33,9 @@ function App() {
           <Route path='/services' element={<Services />} />
           <Route path='/faqs' element={<Faqs />} />
           <Route path='/contact' element={<Contact />}  />
-          <Route path='/:services/:service' element={<Service />} />
+          <Route path='/services/:service' element={<Service />} />
           <Route path='/aboutUs' element={<AboutUs  />} />
+          <Route path='*' element={<Errorpage />} />
         </Routes>
         <Footer />
       </Suspense>

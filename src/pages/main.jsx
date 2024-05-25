@@ -8,8 +8,20 @@ import Cards from '../components/cards';
 import data from '../data.json';
 import Partners from '../components/partners';
 import Statistics from '../components/statistics';
+import { useLanguage } from '../useLanguage';
 
 function Main() {
+    const {georgian, setGeorgian} = useLanguage()
+
+    useEffect(() => {
+        const storedLanguage = localStorage.getItem('language');
+        if (storedLanguage) {
+            setGeorgian(storedLanguage === 'geo');
+        }
+    }, [georgian]);
+
+    console.log(georgian);
+    
     return (
         <main className='flex flex-col min-h-screen w-full font-Inter bg-[#FDFEFF] lg:bg-main-background bg-no-repeat bg-contain bg-[bottom] 4xl:items-center'>
 
