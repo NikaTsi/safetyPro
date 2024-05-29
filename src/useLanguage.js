@@ -1,21 +1,29 @@
 import { useState, useEffect } from "react";
 
 export const useLanguage = () => {
-    const [georgian, setGeorgian] = useState(false);
+    const [language, setLanguage] = useState(() => localStorage.getItem("language") || "Eng");
+
+    const handleLanguageChange = () => {
+        const newLanguage = language === "Eng" ? "Geo" : "Eng";
+        setLanguage(newLanguage);
+        localStorage.setItem("language", newLanguage);
+        window.dispatchEvent(new Event("storage"));
+    };
 
     useEffect(() => {
-        const storedLanguage = localStorage.getItem('language');
-        if (storedLanguage) {
-            setGeorgian(storedLanguage === 'geo');
-        }
+        const handleStorageChange = () => {
+            const storedLanguage = localStorage.getItem("language");
+            if (storedLanguage) {
+                setLanguage(storedLanguage);
+            }
+        };
+
+        window.addEventListener("storage", handleStorageChange);
+        
+        return () => {
+            window.removeEventListener("storage", handleStorageChange);
+        };
     }, []);
 
-    function handleLanguageChange() {
-        const newLanguage = georgian ? 'eng' : 'geo';
-        setGeorgian(!georgian);
-        localStorage.setItem('language', newLanguage);
-    }
-
-
-    return { georgian, setGeorgian, handleLanguageChange }
-}
+    return { language, handleLanguageChange };
+};

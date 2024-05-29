@@ -7,8 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         "Inter": ["Inter", "sans-serif"],
-        "FiraGo": ["FiraGO", "sans-serif"],
-        "FiraSans": ["Fira Sans", "sans-serif"],
+        "Noto": ["Noto Sans Georgian", "sans-serif"],
       },
       backdropBlur: {
         '24': '24px',

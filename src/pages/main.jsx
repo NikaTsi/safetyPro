@@ -10,38 +10,34 @@ import Partners from '../components/partners';
 import Statistics from '../components/statistics';
 import { useLanguage } from '../useLanguage';
 
+
 function Main() {
-    const {georgian, setGeorgian} = useLanguage()
+    const { language } = useLanguage();
 
-    useEffect(() => {
-        const storedLanguage = localStorage.getItem('language');
-        if (storedLanguage) {
-            setGeorgian(storedLanguage === 'geo');
-        }
-    }, [georgian]);
+    const aboutUsGeo = data.pages.aboutUs.sectionOneGeo.paragraph.split(' ')
+    const splicedStatement = aboutUsGeo.slice(0, 10)
 
-    console.log(georgian);
-    
+
     return (
-        <main className='flex flex-col min-h-screen w-full font-Inter bg-[#FDFEFF] lg:bg-main-background bg-no-repeat bg-contain bg-[bottom] 4xl:items-center'>
-
+        <main className={`flex flex-col min-h-screen w-full bg-[#FDFEFF] lg:bg-main-background bg-no-repeat bg-contain bg-[bottom] 4xl:items-center ${language === "Geo" ? "font-Noto" : "font-Inter"}`}>
             <div className='flex flex-col w-full items-center px-[28px] 4xl:px-0 4xl:w-[1440px]'>
                 <div className='flex relative flex-col w-full items-start pt-[55px] pl-[43px] pb-[30px] pr-[5px] gap-[50px] rounded-[20px] bg-[#000] bg-background1 bg-no-repeat bg-cover 3xl:bg-background1-desktop lg:pt-[193px] lg:pl-[150px] lg:h-[640px]'>
                     <div className='absolute bg-[#D9D9D9] opacity-80 top-[44px] left-[28px] w-[71px] h-[1px] lg:left-[110px] lg:w-[163px] lg:h-[3px] lg:top-[153px]'></div>
                     <div className='absolute bg-[#F7941D] top-[75px] left-[28px] w-[242px] h-[32px] lg:w-[553px] lg:h-[72px] lg:top-[225px] lg:left-[110px]'></div>
-                    <h1 className='text-[28px] font-bold leading-[35px] text-[#FFFF] z-10 tracking-[-1px] lg:text-[64px] lg:leading-[70px]'>PROTECT YOUR <br /> TOMORROW TODAY</h1>
+                    <h1 className={`text-[28px] font-bold leading-[35px]  z-10 tracking-[-1px] text-[#fff] lg:text-[64px] lg:leading-[70px]`}>{language === "Geo" ? <>დაიცავი ხვალინდელი <br /> დღე დღეს.</> : <>PROTECT YOUR <br /> TOMORROW TODAY</>}</h1>
                     <div className='pl-[35px] lg:pr-[158px] lg:mt-[150px] lg:w-full lg:flex lg:justify-end'>
-                        <ContactUs width={"w-[172px]"} />
+                        <ContactUs language={language} width={"w-[172px]"} />
                     </div>
                 </div>
 
                 <div className='flex flex-col w-full mt-[34px] mb-[8px] md:flex-row md:mb-[24px] lg:mb-[64px] reg:items-center'>
                     <div>
-                        <h1 className='font-bold text-[28px] text-[#323232] lg:text-[48px]'>about us</h1>
-                        <p className='font-medium text-[12px] text-[#323232] mt-[11px] mb-[13px] lg:text-[19px]'>{data.pages.aboutUs.sectionOne.paragraph}</p>
+                        <h1 className='font-bold text-[28px] text-[#323232] lg:text-[48px]'>{language === "Geo" ? "ჩვენს შესახებ" : "about us"}</h1>
+                        <p className='font-medium text-[12px] text-[#323232] mt-[11px] mb-[13px] lg:text-[19px]'>{language === "Geo" ? splicedStatement.join(' ') : data.pages.aboutUs.sectionOne.paragraph}</p>
                         <div className='w-[116px]'>
-                            <Link className='w-[116px]' to={"/services"}>
-                                <SeeServices />
+                            <Link to={"/aboutUs"}>
+                                <button className='flex relative items-center justify-center py-[2px] gap-[7px] px-[8px] w-[115px] rounded-md border border-[##d0d5dd] text-[##344054] text-[14px] leading-[20px] font-medium group shadow-button'>
+                                    <div className='w-[6px] h-[6px] rounded-full bg-[#f7941d] transition-colors duration-300 group-hover:bg-[#07c870]'></div>{language === "Geo" ? "გაიგე მეტი" : "learn more"}</button>
                             </Link>
                         </div>
                     </div>
@@ -50,7 +46,7 @@ function Main() {
                 </div>
 
                 <section className='flex flex-col w-full items-center gap-[52px] bg-[#323232] rounded-[20px] px-[17px] py-[33px] pb-[39px] lg:px-[40px]'>
-                    <p className='hidden text-[#fff] text-[50px] font-bold lg:flex'>our services</p>
+                    <p className='hidden text-[#fff] text-[50px] font-bold lg:flex'>{language === "Geo" ? "ჩვენი სერვისები" : "our services"}</p>
                     <Cards />
                     <Consultation wide={true} />
                 </section>

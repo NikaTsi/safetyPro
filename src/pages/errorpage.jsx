@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function () {
+export default function ErrorPage() {
   return (
     <main className='flex flex-col w-full items-center min-h-screen font-Inter'>
       <section class="py-8 px-4 lg:py-16 lg:px-6">

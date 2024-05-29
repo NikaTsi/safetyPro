@@ -44,6 +44,16 @@
                     "First aid trainings",
                     "Individual protection means"
                 ],
+                "headingGeo":[
+                    "შრომის უსაფრთხოების მომსახურება",
+                    "ელექტრო უსაფრთხოების შემოწმება",
+                    "სახანძრო უსაფრთხოება",
+                    "ფიზიკური ფაქტორების და მიკროკლიმატის გაზომვები",
+                    "სურსათის უვნებლობა",
+                    "გარემოს დაცვა და ნარჩენების მართვა",
+                    "პირველადი დახამრების ტრენინგი",
+                    "ინდივიდუალური დახამრების "
+                ],
                 "urls": [
                     "/services/labor-safety-services",
                     "/services/electrical-safety-check",
@@ -69,23 +79,30 @@
                     "/main/partners/image10.svg"
                 ]
             },
-            "cards": {
-                "text": [
-                    "INJURIES",
-                    "PENALTIES",
-                    "COMPLIANCE RATE"
-                ],
-                "heading": [
-                    "2%",
-                    "1%",
-                    "9%"
-                ],
-                "paragraph": [
-                    "of workplace injuries identified during inspections.",
-                    "of penalties incurred by companies following our inspections.",
-                    "compliance rate achieved by companies following our recommendations"
-                ]
-            },
+            "cards": [
+                {
+                    "heading": "2%",
+                    "text": "INJURIES",
+                    "textGeo": "",
+                    "paragraph": "of workplace injuries identified during inspections.",
+                    "paragraphGeo": "of workplace injuries identified during inspections."
+                },
+                {
+                    "heading": "1%",
+                    "text": "PENALTIES",
+                    "textGeo": "",
+                    "paragraph": "of penalties incurred by companies following our inspections.",
+                    "paragraphGeo": "of penalties incurred by companies following our inspections."
+                },
+                {
+                    "heading": "97%",
+                    "text": "COMPLIANCE RATE",
+                    "textGeo": "",
+                    "paragraph": "compliance rate achieved by companies following our recommendations",
+                    "paragraphGeo": "compliance rate achieved by companies following our recommendations"
+                }
+                
+            ],
             "section": {
                 "title": [
                     "QUALITY ASSURANCE",
@@ -525,35 +542,24 @@
             "cards": [
                 {
                     "title": "Find us",
+                    "titleGeo": "გამოგვიწერეთ",
                     "images": "/contact/smile.svg",
-                    "paragraph": "Find us on social networks."
+                    "paragraph": "Find us on social networks.",
+                    "paragraphGeo": "ჩვენი სოციალური სივრცე."
                 },
                 {
                     "title": "Chat to support",
+                    "titleGeo": "მოგვწერეთ",
                     "images": "/contact/chat.svg",
-                    "paragraph": "We’re here to help."
+                    "paragraph": "We’re here to help.",
+                    "paragraphGeo": "აქ ვართ დასახმარებლად."
                 },
                 {
                     "title": "Call us",
+                    "titleGeo": "დაგვიკავშირდით",
                     "images": "/contact/phone.svg",
-                    "paragraph": "Mon-Fri from 8am to 5pm."
-                }
-            ],
-            "cardsGeo": [
-                {
-                    "title": "Find us",
-                    "images": "/contact/smile.svg",
-                    "paragraph": "Find us on social networks."
-                },
-                {
-                    "title": "Chat to support",
-                    "images": "/contact/chat.svg",
-                    "paragraph": "We’re here to help."
-                },
-                {
-                    "title": "Call us",
-                    "images": "/contact/phone.svg",
-                    "paragraph": "Mon-Fri from 8am to 5pm."
+                    "paragraph": "Mon-Fri from 8am to 5pm.",
+                    "paragraphGeo": "ორშ. პარ. 11:00 დან 19:00."
                 }
             ]
         },

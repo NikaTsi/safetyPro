@@ -14,7 +14,7 @@ export default function Header() {
     const [isHovered, setIsHovered] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
 
-    const {georgian, handleLanguageChange} = useLanguage()
+    const {language, handleLanguageChange} = useLanguage()
 
     const handleOpen = () => {
         setIsOpen(!isOpen);
@@ -25,7 +25,7 @@ export default function Header() {
     }
 
     return (
-        <header className={`flex relative w-full justify-center bg-[#FDFEFF] pt-6 pb-[21px] px-[28px] 3xl:pt-[36px] 3xl:pb-[36px] z-[100] ${georgian ? "font-FiraGo" : "font-Inter"} ${isOpen ? "sticky top-0 left-0" : ""}`}>
+        <header className={`flex relative w-full justify-center bg-[#FDFEFF] pt-6 pb-[21px] px-[28px] 3xl:pt-[36px] 3xl:pb-[36px] z-[100] ${language === "Geo" ? "font-Noto" : "font-Inter"} ${isOpen ? "sticky top-0 left-0" : ""}`}>
             <div className='flex w-full justify-between items-center 3xl:w-[1440px]'>
 
                 <Link to={"/"} onClick={handleClose}>
@@ -33,19 +33,19 @@ export default function Header() {
                 </Link>
 
                 <div className='hidden gap-10 lg:flex'>
-                    <NavigationLinks data={data.navigation} language={georgian} />
+                    <NavigationLinks data={data.navigation} language={language} />
                 </div>
 
                 <div className='flex items-center gap-[23px]'>
                     <div className="hidden lg:flex">
-                        <Contact width={"w-[121px]"} language={georgian} />
+                        <Contact width={"w-[121px]"} language={language} />
                     </div>
 
-                    <div className={`w-[30px] h-[30px] ${georgian ? "flex" : "hidden"}`} onClick={handleLanguageChange} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                    <div className={`w-[30px] h-[30px] ${language === "Geo" ? "flex" : "hidden"}`} onClick={handleLanguageChange} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                         <img className={`cursor-pointer ${isHovered ? 'hidden' : ''}`} src={eng} alt="language" />
                         <img className={`cursor-pointer ${isHovered ? '' : 'hidden'}`} src={engc} alt="language" />
                     </div>
-                    <div className={`w-[30px] h-[30px] ${georgian ? "hidden" : "flex"}`} onClick={handleLanguageChange} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+                    <div className={`w-[30px] h-[30px] ${language === "Geo" ? "hidden" : "flex"}`} onClick={handleLanguageChange} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
                         <img className={`cursor-pointer ${isHovered ? 'hidden' : ''}`} src={geo} alt="language" />
                         <img className={`cursor-pointer ${isHovered ? '' : 'hidden'}`} src={geoc} alt="language" />
                     </div>
@@ -61,12 +61,12 @@ export default function Header() {
                             {
                                 data.navigation.map(item => (
                                     <Link onClick={handleClose} key={item.url} to={`${item.url}`} className={`font-semibold text-[16px] leading-[26px] hover:text-[#f7941d] text-[#FFFFFF] cursor-pointer`}>
-                                        {georgian ? item.titleGeo : item.title}
+                                        {language === "Geo" ? item.titleGeo : item.title}
                                     </Link>
                                 ))
                             }
                             <Link onClick={handleClose} to={"/contact"}>
-                                <button className={`bg-[#f7941d] text-[#ffffff] rounded-[8px] h-[44px] text-[16px] font-bold leading-[24px] w-[121px] hover:bg-[#323232] duration-300 active:opacity-80 shadow-button border border-[#f7941d]`}>{georgian ? "მოგვწერეთ" : "Contact us"}</button>
+                                <button className={`bg-[#f7941d] text-[#ffffff] rounded-[8px] h-[44px] text-[16px] font-bold leading-[24px] w-[121px] hover:bg-[#323232] duration-300 active:opacity-80 shadow-button border border-[#f7941d]`}>{language === "Geo" ? "მოგვწერეთ" : "Contact us"}</button>
                             </Link>
                         </div>
                     )}
