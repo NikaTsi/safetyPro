@@ -43,7 +43,7 @@ export default function Faqs() {
 
         <div className='flex flex-col w-full gap-[11px] mb-[28px] items-start lg:gap-[25px] 4xl:w-[1440px]'>
           <h1 className='text-[24px] font-semibold leading-[44px] text-[#f7941d] lg:text-[36px] lg:leading-[44px]'>{language === "Geo" ? "ხშირად დასმული კითხვები" : "Frequently asked questions"}</h1>
-          <p className='text-[14px] text-regular text-[#475467] lg:text-[20px] lg:leading-[30px]'>Everything you need to know about the product and billing.</p>
+          <p className='text-[14px] text-regular text-[#475467] lg:text-[20px] lg:leading-[30px]'>{language === "Geo" ? "ყველა საჭირო ინფორმაცია სერვისის შესახებ" : "Everything you need to know about service."}</p>
         </div>
 
         <div className='flex flex-col w-full gap-[47px] mt-[30px] 3xl:gap-[24px] 4xl:w-[1440px]'>
@@ -54,10 +54,10 @@ export default function Faqs() {
 
                   <div className='flex w-full gap-[px] justify-between items-start'>
                     <h1 className='text-[18px] font-semibold leading-[27px] text-[#323232]'>{item.title}</h1>
-                    <div className={`flex font-Inter justify-center items-center border-[2px] rounded-[50%] min-w-[24px] h-[24px] pb-[2px] font-bold text-[20px] hover:cursor-pointer  ${activeIndex === index ? 'border-[#F7941D] text-[#F7941D]' : 'border-[#58595b] text-[#58595b]'}`} onClick={() => handleClick(index)}>{activeIndex === index ? '-' : '+'}</div>
+                    <div className={`flex font-Inter justify-center items-center border-[2px] rounded-[50%] min-w-[24px] h-[24px] pb-[2px] font-bold text-[20px] hover:cursor-pointer hover:opacity-80  ${activeIndex === index ? 'border-[#F7941D] text-[#F7941D]' : 'border-[#58595b] text-[#58595b]'}`} onClick={() => handleClick(index)}>{activeIndex === index ? '-' : '+'}</div>
                   </div>
 
-                  <div className={`${activeIndex === index ? "flex duration-300 ease-in-out animate-popDown" : "hidden"}`}>
+                  <div className={`${activeIndex === index ? "animate-open" : "animate-close hidden"}`}>
                     <span className='text-[#323232] text-[16px] font-regular pr-[40px]'>{item.paragraph}</span>
                   </div>
 
@@ -74,7 +74,7 @@ export default function Faqs() {
                     <div className={`flex justify-center items-center border-[2px] rounded-[50%] min-w-[24px] h-[24px] pb-[2px] font-bold text-[20px] hover:cursor-pointer ${activeIndex === index ? 'border-[#F7941D] text-[#F7941D]' : 'border-[#58595b] text-[#58595b]'}`} onClick={() => handleClick(index)}>{activeIndex === index ? '-' : '+'}</div>
                   </div>
 
-                  <div className={`${activeIndex === index ? "flex duration-300 ease-in-out animate-popDown" : "hidden"}`}>
+                  <div className={`${activeIndex === index ? "animate-open" : "animate-close hidden"}`}>
                     <span className='text-[#323232] text-[16px] font-regular pr-[40px]'>{item.paragraph}</span>
                   </div>
 

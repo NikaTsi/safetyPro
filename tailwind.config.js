@@ -21,6 +21,7 @@ module.exports = {
         "md": "768px",
         "reg": "840px",
         "lg": "1024px",
+        "xl": "1160px",
         "2xl": "1240px",
         "3xl": '1440px',
         "4xl": '1496px',
@@ -36,43 +37,57 @@ module.exports = {
         'background-tint': "rgba(50, 50, 50, 0.96)",
       },
       animation: {
-        'popDown': 'popDown 0.2s ease-in-out',
-        'headerAnimationOpen': 'headerAnimationOpen 0.3s ease-in-out',
+        'open': 'open 0.2s ease-in-out forwards',
+        'close': 'close 0.2s ease-in-out forwards',
+        'headerAnimationOpen': 'headerAnimationOpen 0.3s ease-in-out forwards',
+        'headerAnimationClose': 'headerAnimationClose 0.3s ease-in-out forwards',
       },
       keyframes: {
-        popDown: {
+        open: {
           from: {
-            transform: 'translateY(-20px)',
-            display: 'none',
+            transform: 'translateY(-40px)',
+            display: "none",
             opacity: 0,
           },
           to: {
             transform: 'translateY(0)',
-            display: 'flex',
+            display: "flex",
             opacity: 1,
+          },
+        },
+        close: {
+          from: {
+            transform: 'translateY(0)',
+            display: "flex",
+            opacity: 1,
+          },
+          to: {
+            transform: 'translateY(-40px)',
+            display: "none",
+            opacity: 0,
           },
         },
         headerAnimationOpen: {
           from: {
             transform: 'translateY(-100%)',
-            display: 'none',
+            display: "none",
             opacity: 0,
           },
           to: {
             transform: 'translateY(0)',
-            display: 'flex',
+            display: "flex",
             opacity: 1,
           },
         },
         headerAnimationClose: {
           from: {
             transform: 'translateY(0)',
-            display: 'flex',
+            display: "flex",
             opacity: 1,
           },
           to: {
             transform: 'translateY(-100%)',
-            display: 'none',
+            display: "none",
             opacity: 0,
           },
         },

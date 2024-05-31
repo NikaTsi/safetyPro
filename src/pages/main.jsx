@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import ContactUs from '../components/buttons/contactUs';
 import Consultation from '../components/buttons/freeConsultation';
-import SeeServices from '../components/buttons/seeServices';
 import helmet from '../assets/main/helmet.png';
 import Cards from '../components/cards';
 import data from '../data.json';
@@ -11,12 +10,13 @@ import Statistics from '../components/statistics';
 import { useLanguage } from '../useLanguage';
 
 
+
+
 function Main() {
     const { language } = useLanguage();
 
     const aboutUsGeo = data.pages.aboutUs.sectionOneGeo.paragraph.split(' ')
     const splicedStatement = aboutUsGeo.slice(0, 10)
-
 
     return (
         <main className={`flex flex-col min-h-screen w-full bg-[#FDFEFF] lg:bg-main-background bg-no-repeat bg-contain bg-[bottom] 4xl:items-center ${language === "Geo" ? "font-Noto" : "font-Inter"}`}>
@@ -45,7 +45,7 @@ function Main() {
                     <img className="my-[20px] md:my-0 md:w-[60%] mix-blend-multiply" src={helmet} />
                 </div>
 
-                <section className='flex flex-col w-full items-center gap-[52px] bg-[#323232] rounded-[20px] px-[17px] py-[33px] pb-[39px] lg:px-[40px]'>
+                <section className='flex flex-col w-full items-center gap-[52px] bg-[#323232] rounded-[20px] sm:px-[17px] py-[33px] pb-[39px] lg:px-[40px]'>
                     <p className='hidden text-[#fff] text-[50px] font-bold lg:flex'>{language === "Geo" ? "ჩვენი სერვისები" : "our services"}</p>
                     <Cards />
                     <Consultation wide={true} />
@@ -57,21 +57,21 @@ function Main() {
                 <div className='w-full mt-[82px] mb-[38px] flex flex-col gap-[63px] reg:flex-row reg:relative reg:gap-0 reg:justify-between'>
                     <div className='relative reg:w-[40%]'>
                         <div className='bg-[#07c870] w-[95%] 2xl:w-full h-[49px] 2xl:h-[72px]'></div>
-                        <h1 className='absolute text-[#323232] text-[40px] font-bold leading-[47px] ml-[6px] w-[30px] top-[-25px] 2xl:top-[-30px] 2xl:text-[60px] 2xl:leading-[70px] 2xl:tracking-[-2px]'>{data.pages.main.section.title[0]}</h1>
-                        <p className='text-[#323232] text-[20px] font-regular mt-[40px] 2xl:text-[24px]'>{data.pages.main.section.paragraph[0]}</p>
+                        <h1 className='absolute text-[#323232] text-[40px] font-bold leading-[47px] ml-[6px] w-[30px] top-[-25px] 2xl:top-[-30px] 2xl:text-[60px] 2xl:leading-[70px] 2xl:tracking-[-2px]'>{language === "Geo" ? data.pages.main.section.titleGeo[0] : data.pages.main.section.title[0]}</h1>
+                        <p className={`text-[#323232] text-[20px] font-regular mt-[40px] 2xl:text-[24px] ${language === "Geo" ? "2xl:mt-[50px]" : ""}`}>{language === "Geo" ? data.pages.main.section.paragraphGeo[0] : data.pages.main.section.paragraph[0]}</p>
                     </div>
 
                     <div className='hidden opacity-60 reg:flex shadow-line  w-[1px] h-[230px] bg-[#58595B] left-[50%]'></div>
 
                     <div className='relative flex flex-col reg:w-[40%]'>
                         <div className='bg-[#f7941d] w-[95%] h-[49px] 2xl:w-full 2xl:h-[72px]'></div>
-                        <h1 className='absolute text-[#323232] text-[40px] font-bold leading-[47px] ml-[6px] w-[30px] top-[-25px] 2xl:top-[-30px] 2xl:text-[60px] 2xl:leading-[70px] 2xl:tracking-[-2px]'>{data.pages.main.section.title[1]}</h1>
-                        <p className='text-[#323232] text-[20px] font-regular mt-[40px] 2xl:text-[24px]'>{data.pages.main.section.paragraph[1]}</p>
+                        <h1 className='absolute text-[#323232] text-[40px] font-bold leading-[47px] ml-[6px] w-[30px] top-[-25px] 2xl:top-[-30px] 2xl:text-[60px] 2xl:leading-[70px] 2xl:tracking-[-2px]'>{language === "Geo" ? data.pages.main.section.titleGeo[1] : data.pages.main.section.title[1]}</h1>
+                        <p className={`text-[#323232] text-[20px] font-regular mt-[40px] 2xl:text-[24px] ${language === "Geo" ? "2xl:mt-[50px]" : ""}`}>{language === "Geo" ? data.pages.main.section.paragraphGeo[1] : data.pages.main.section.paragraph[1]}</p>
                     </div>
                 </div>
 
                 <div className='flex pt-[28px] gap-[60px] px-[24px] pb-[32px] flex-col w-full mb-[68px] bg-background2 bg-background-tint bg-no-repeat bg-cover rounded-[20px]  reg:justify-center reg:gap-[53px] reg:items-start reg:px-[40px] reg:mt-[40px] lg:px-[90px] lg:pt-[70px] lg:pb-[140px]'>
-                    <h1 className='text-[37px] tb:w-[470px] font-bold text-[#fff] opacity-90 leading-[50px] lg:text-[72px] lg:leading-[81px] reg:w-[200px] lg:w-[200px]'>PROTECT YOUR TOMMOROW  <span className='text-[#f7941d]'>TODAY</span></h1>
+                    <h1 className='text-[37px] tb:w-[470px] font-bold text-[#fff] opacity-90 leading-[50px] lg:text-[72px] lg:leading-[81px] reg:w-[200px] lg:w-[200px]'>{language === "Geo" ? <>დაიცავი ხვალინდელი დღე <span className='text-[#f7941d]'>დღეს.</span></> : <>PROTECT YOUR TOMMOROW <span className='text-[#f7941d]'>TODAY</span></>}</h1>
                     <Consultation wide={true} />
                 </div>
 

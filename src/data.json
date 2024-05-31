@@ -83,35 +83,33 @@
                 {
                     "heading": "2%",
                     "text": "INJURIES",
-                    "textGeo": "",
+                    "textGeo": "დაზიანების შემთხვევები",
                     "paragraph": "of workplace injuries identified during inspections.",
-                    "paragraphGeo": "of workplace injuries identified during inspections."
+                    "paragraphGeo": "სამუშაო ადგილზე გამოვლენილი დაზიანებები შემოწმების დროს."
                 },
                 {
                     "heading": "1%",
                     "text": "PENALTIES",
-                    "textGeo": "",
+                    "textGeo": "ჯარიმები",
                     "paragraph": "of penalties incurred by companies following our inspections.",
-                    "paragraphGeo": "of penalties incurred by companies following our inspections."
+                    "paragraphGeo": "კომპანიების მიერ ჩვენი შემოწმების შემდეგ დაკისრებული ჯარიმების შემთხვევები."
                 },
                 {
                     "heading": "97%",
                     "text": "COMPLIANCE RATE",
-                    "textGeo": "",
+                    "textGeo": "შესაბამისობის მაჩვენებელი",
                     "paragraph": "compliance rate achieved by companies following our recommendations",
-                    "paragraphGeo": "compliance rate achieved by companies following our recommendations"
+                    "paragraphGeo": "კომპანიების მიერ ჩვენი რეკომენდაციების შესაბამისად მიღწეული შესაბამისობის მაჩვენებელი."
                 }
-                
             ],
             "section": {
-                "title": [
-                    "QUALITY ASSURANCE",
-                    "CONTINUOUS IMPROVEMENT"
-                ],
+                "title": ["QUALITY ASSURANCE", "CONTINUOUS IMPROVEMENT"],
+                "titleGeo": ["ხარისხის გარანტია", "მუდმივი გაუმჯობესება"],
                 "paragraph": [
                     "Assurance: We are dedicated to maintaining a track record of zero injuries and penalties through our thorough inspections and recommendations.",
                     "Our goal is to help companies achieve and maintain the highest standards of safety and compliance."
-                ]
+                ],
+                "paragraphGeo": ["ჩვენ ვცდილობთ მინიმუმამდე დავიყვანოთ დაზიანებებისა და ჯარიმების რაოდენობა ინსპექტირებისა და რეკომენდაციების მეშვეობით.", "მუდმივი გაუმჯობესება ჩვენი მიზანია დავეხმაროთ კომპანიებს მიაღწიონ და შეინარჩუნონ ჯანმრთელობისა და უსაფრთხოების უმაღლესი სტანდარტები."]
             }
         },
         "services": [

@@ -15,7 +15,7 @@ export default function Partners() {
 
       <div className='grid grid-cols-2 items-center justify-center gap-x-[30px] gap-y-[25px] mt-[29px] mb-[67px] sm:flex w-full sm:flex-wrap lg:mt-[20px] lg:mb-[44px]'>
         {data.pages.main.partners.images.map((item, index) => (
-          <div className='flex justify-center items-center mix-blend-multiply' key={index}>
+          <div className='flex justify-center items-center mix-blend-multiply lg:flex-row ' key={index}>
             <img src={require(`../assets${item}`)} alt='partners' key={index} />
           </div>
         ))}

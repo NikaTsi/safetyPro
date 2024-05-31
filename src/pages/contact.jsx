@@ -41,7 +41,7 @@ function Contact() {
                                 <img src={require(`../assets${item.images}`)} />
                                 <h1 className='text-[20px] leading-[30px] font-bold text-[#f2f2f2] pt-[64px]'>{language === "Geo" ? item.titleGeo : item.title}</h1>
                                 <p className='text-[16px] leading-[24px] font-semibold text-[#f2f2f2]'>{language === "Geo" ? item.paragraphGeo : item.paragraph}</p>
-                                <span className={`flex gap-[20px] text-[#f7941d] text-[16px] font-bold leading-[24px] mt-[24px] ${index >= 1 && "cursor-pointer hover:underline"}`} onClick={ContactInfoArr[index]}>{arrayOfInfo[index]}</span>
+                                <span className={`flex gap-[20px] text-[#f7941d] text-[16px] font-bold leading-[24px] mt-[24px] h-[24px] ${index >= 1 && "cursor-pointer hover:underline"}`} onClick={ContactInfoArr[index]}>{arrayOfInfo[index]}</span>
                             </div>
                         ))}
                     </div>
