@@ -76,6 +76,9 @@
 .animationNone {
     display: none;
 }
+.animation {
+    display: flex;
+}
 
 @media (width >=1160px) {
     .headerAnimationClose {
