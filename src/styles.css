@@ -5,15 +5,13 @@
         -o-transform: translateY(-40px);
         transform: translateY(-40px);
         display: none;
+        visibility: hidden;
     }
     to {
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
         -o-transform: translateY(0);
         transform: translateY(0);
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
     }
 }
@@ -24,9 +22,6 @@
         -moz-transform: translateY(0);
         -o-transform: translateY(0);
         transform: translateY(0);
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
     }
     to {
@@ -34,6 +29,7 @@
         -moz-transform: translateY(-40px);
         -o-transform: translateY(-40px);
         transform: translateY(-40px);
+        visibility: hidden;
         display: none;
     }
 }
