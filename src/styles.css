@@ -4,6 +4,7 @@
         -moz-transform: translateY(-40px);
         -o-transform: translateY(-40px);
         transform: translateY(-40px);
+        display: none;
     }
     to {
         -webkit-transform: translateY(0);
@@ -11,7 +12,6 @@
         -o-transform: translateY(0);
         transform: translateY(0);
         display: flex;
-        opacity: 1;
     }
 }
 
@@ -22,7 +22,6 @@
         -o-transform: translateY(0);
         transform: translateY(0);
         display: flex;
-        opacity: 1;
     }
     to {
         -webkit-transform: translateY(-40px);
@@ -30,7 +29,6 @@
         -o-transform: translateY(-40px);
         transform: translateY(-40px);
         display: none;
-        opacity: 0;
     }
 }
 
