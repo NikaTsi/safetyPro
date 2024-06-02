@@ -4,6 +4,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Loader from './components/loader';
 import ErrorPage from './pages/errorpage';
+import './styles.css'
 
 const Main = lazy(() => import('./pages/main'));
 const Services = lazy(() => import('./pages/services'));

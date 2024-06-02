@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import FAQs from '../assets/faqs/FAQS.png'
 import data from '../data.json'
 import { useLanguage } from '../useLanguage'
+import '../styles.css'
 
 export default function Faqs() {
   const { language } = useLanguage()
