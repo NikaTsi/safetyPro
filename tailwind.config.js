@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-
   content: [
     "./src/**/*.{js,jsx}",
   ],
@@ -39,13 +38,9 @@ module.exports = {
       },
       animation: {
         'open': 'open 0.2s ease-in-out forwards',
-        '-webkit-animation-open': 'open 0.2s ease-in-out forwards',
         'close': 'close 0.2s ease-in-out forwards',
-        '-webkit-animation-close': 'close 0.2s ease-in-out forwards',
         'headerAnimationOpen': 'headerAnimationOpen 0.3s ease-in-out forwards',
-        '-webkit-animation-headerAnimationOpen': 'headerAnimationOpen 0.3s ease-in-out forwards',
         'headerAnimationClose': 'headerAnimationClose 0.3s ease-in-out forwards',
-        '-webkit-animation-headerAnimationClose': 'headerAnimationClose 0.3s ease-in-out forwards',
       },
       keyframes: {
         open: {
