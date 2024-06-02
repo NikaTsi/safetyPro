@@ -53,13 +53,13 @@ export default function Faqs() {
               {data.pages.FAQs.infoGeo.map((item, index) => (
                 <div className={`flex flex-col w-full gap-[8px]  ${index !== 5 && "3xl:border-b-2 3xl:pb-[32px] 3xl:border-[#f9fafb]"}`} key={index}>
 
-                  <div className='flex w-full gap-[px] justify-between items-start'>
+                  <div className='flex w-full gap-[10px] justify-between items-start'>
                     <h1 className='text-[18px] font-semibold leading-[27px] text-[#323232]'>{item.title}</h1>
-                    <div className={`flex font-Inter justify-center items-center border-[2px] rounded-[50%] min-w-[24px] h-[24px] pb-[2px] font-bold text-[20px] hover:cursor-pointer hover:opacity-80  ${activeIndex === index ? 'border-[#F7941D] text-[#F7941D]' : 'border-[#58595b] text-[#58595b]'}`} onClick={() => handleClick(index)}>{activeIndex === index ? '-' : '+'}</div>
+                    <div className={`flex relative font-Inter justify-center items-center border-[2px] rounded-[50%] min-w-[24px] h-[24px] pb-[2px] font-bold text-[20px] hover:cursor-pointer hover:opacity-80 z-[1000000]  ${activeIndex === index ? 'border-[#F7941D] text-[#F7941D]' : 'border-[#58595b] text-[#58595b]'}`} onClick={() => handleClick(index)}>{activeIndex === index ? '-' : '+'}</div>
                   </div>
 
                   <div>
-                    <span className={`text-[#323232] text-[16px] font-regular pr-[40px] -z-50 ${activeIndex === index ? "open" : "close invisible"}`}>{item.paragraph}</span>
+                    <span className={`text-[#323232] text-[16px] font-regular pr-[52px] -z-50 ${activeIndex === index ? "open" : "close invisible"}`}>{item.paragraph}</span>
                   </div>
 
                 </div>
@@ -70,13 +70,13 @@ export default function Faqs() {
               {data.pages.FAQs.info.map((item, index) => (
                 <div className={`flex flex-col w-full gap-[8px]  ${index !== 5 && "3xl:border-b-2 3xl:pb-[32px] 3xl:border-[#f9fafb]"}`} key={index}>
 
-                  <div className='flex w-full gap-[px] justify-between items-start'>
+                  <div className='flex w-full gap-[10px] justify-between items-start'>
                     <h1 className='text-[18px] font-semibold leading-[27px] text-[#323232]'>{item.title}</h1>
                     <div className={`flex relative justify-center items-center border-[2px] rounded-[50%] min-w-[24px] h-[24px] pb-[2px] font-bold text-[20px] hover:cursor-pointer z-[1000000] ${activeIndex === index ? 'border-[#F7941D] text-[#F7941D]' : 'border-[#58595b] text-[#58595b]'}`} onClick={() => handleClick(index)}>{activeIndex === index ? '-' : '+'}</div>
                   </div>
 
                   <div>
-                    <span className={`text-[#323232] text-[16px] font-regular pr-[40px] ${activeIndex === index ? "open" : "close invisible"}`}>{item.paragraph}</span>
+                    <span className={`text-[#323232] text-[16px] font-regular pr-[52px] ${activeIndex === index ? "open" : "close invisible"}`}>{item.paragraph}</span>
                   </div>
 
                 </div>

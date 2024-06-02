@@ -5,6 +5,7 @@
         -o-transform: translateY(-40px);
         transform: translateY(-40px);
         opacity: 0;
+        position: absolute;
     }
     to {
         -webkit-transform: translateY(0);
@@ -29,6 +30,7 @@
         -o-transform: translateY(-40px);
         transform: translateY(-40px);
         opacity: 0;
+        position: absolute;
     }
 }
 
@@ -83,7 +85,6 @@
 
 .close {
     animation: close 0.2s ease-in-out forwards;
-    position: absolute;
 }
 
 .animationNone {
