@@ -9,6 +9,7 @@ import NavigationLinks from './navigationLinks';
 import data from '../data.json';
 import Contact from '../components/buttons/contactUs';
 import { useLanguage } from '../useLanguage';
+import "../styles.css"
 
 export default function Header() {
     const [isHovered, setIsHovered] = useState(false);
@@ -72,7 +73,7 @@ export default function Header() {
                         <div className={`w-[26px] h-[3px] bg-[#1D1C1E] rounded-[4px] transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-[8px]' : ""} `}></div>
                     </div>
 
-                        <div className={`flex flex-col absolute top-[70px] left-0 z-[100] h-[350px] justify-center items-center rounded-b-[20px] w-full gap-[30px] bg-[#323232] lg:top-[92px]  ${isOpen ? "flex animate-headerAnimationOpen" : " hidden animate-headerAnimationClose"} xl:hidden xl:animate-headerAnimationClose`}>
+                        <div className={`flex-col absolute top-[70px] left-0 z-[100] h-[350px] justify-center items-center rounded-b-[20px] w-full gap-[30px] bg-[#323232] lg:top-[92px] ${isOpen ?  "flex headerAnimationOpen" : "headerAnimationClose animationNone"} xl:hidden`} >
                             {data.navigation.map(item => (
                                 <Link onClick={handleClose} key={item.url} to={`${item.url}`} className="font-semibold text-[16px] leading-[26px] hover:text-[#f7941d] text-[#FFFFFF] cursor-pointer">
                                     {language === "Geo" ? item.titleGeo : item.title}
@@ -84,6 +85,7 @@ export default function Header() {
                                 </button>
                             </Link>
                         </div>
+
 
                 </div>
 
