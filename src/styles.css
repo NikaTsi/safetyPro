@@ -66,11 +66,11 @@
 }
 
 .open {
-    animation: open 0.3s ease-in-out forwards;
+    animation: open 0.2s ease-in-out;
 }
 
 .close {
-    animation: close 0.3s ease-in-out forwards;
+    animation: close 0.2s ease-in-out forwards;
 }
 
 .animationNone {

@@ -58,8 +58,8 @@ export default function Faqs() {
                     <div className={`flex font-Inter justify-center items-center border-[2px] rounded-[50%] min-w-[24px] h-[24px] pb-[2px] font-bold text-[20px] hover:cursor-pointer hover:opacity-80  ${activeIndex === index ? 'border-[#F7941D] text-[#F7941D]' : 'border-[#58595b] text-[#58595b]'}`} onClick={() => handleClick(index)}>{activeIndex === index ? '-' : '+'}</div>
                   </div>
 
-                  <div className={`${activeIndex === index ? "open animation" : "close"} animationNone`}>
-                    <span className='text-[#323232] text-[16px] font-regular pr-[40px]'>{item.paragraph}</span>
+                  <div>
+                    <span className={`text-[#323232] text-[16px] font-regular pr-[40px] ${activeIndex === index ? "open " : "close"}`}>{item.paragraph}</span>
                   </div>
 
                 </div>
@@ -75,8 +75,8 @@ export default function Faqs() {
                     <div className={`flex justify-center items-center border-[2px] rounded-[50%] min-w-[24px] h-[24px] pb-[2px] font-bold text-[20px] hover:cursor-pointer ${activeIndex === index ? 'border-[#F7941D] text-[#F7941D]' : 'border-[#58595b] text-[#58595b]'}`} onClick={() => handleClick(index)}>{activeIndex === index ? '-' : '+'}</div>
                   </div>
 
-                  <div className={`${activeIndex === index ? "open animation" : "close"} animationNone`}>
-                    <span className='text-[#323232] text-[16px] font-regular pr-[40px]'>{item.paragraph}</span>
+                  <div>
+                    <span className={`text-[#323232] text-[16px] font-regular pr-[40px] ${activeIndex === index ? "open " : "close"}`}>{item.paragraph}</span>
                   </div>
 
                 </div>
