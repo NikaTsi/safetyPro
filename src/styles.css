@@ -11,6 +11,9 @@
         -moz-transform: translateY(0);
         -o-transform: translateY(0);
         transform: translateY(0);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
     }
 }
@@ -21,6 +24,9 @@
         -moz-transform: translateY(0);
         -o-transform: translateY(0);
         transform: translateY(0);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
     }
     to {
@@ -31,6 +37,7 @@
         display: none;
     }
 }
+
 
 @keyframes headerAnimationOpen {
     from {

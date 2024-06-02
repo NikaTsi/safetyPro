@@ -59,7 +59,7 @@ export default function Faqs() {
                   </div>
 
                   <div>
-                    <span className={`hidden text-[#323232] text-[16px] font-regular pr-[40px] ${activeIndex === index ? "open flex" : "close invisible"}`}>{item.paragraph}</span>
+                    <span className={`text-[#323232] text-[16px] font-regular pr-[40px] ${activeIndex === index ? "open flex" : "close invisible"}`}>{item.paragraph}</span>
                   </div>
 
                 </div>
@@ -76,7 +76,7 @@ export default function Faqs() {
                   </div>
 
                   <div>
-                    <span className={`hidden text-[#323232] text-[16px] font-regular pr-[40px] ${activeIndex === index ? "open flex" : "close invisible"}`}>{item.paragraph}</span>
+                    <span className={`text-[#323232] text-[16px] font-regular pr-[40px] ${activeIndex === index ? "open flex" : "close invisible"}`}>{item.paragraph}</span>
                   </div>
 
                 </div>
