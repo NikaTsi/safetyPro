@@ -11,9 +11,10 @@ import Contact from '../components/buttons/contactUs';
 import { useLanguage } from '../useLanguage';
 import "../styles.css"
 
+
 export default function Header() {
     const [isHovered, setIsHovered] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(null);
     const [showHeader, setShowHeader] = useState(true);
     const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
 
@@ -38,15 +39,21 @@ export default function Header() {
     };
 
     const handleClose = () => {
-        setIsOpen(false);
+        setIsOpen(null);
     };
 
+    useEffect(() => {
+        setTimeout(() => {
+            setIsOpen(null)
+        }, 100);
+    }, [isOpen === false])
+    
     return (
         <header className={`flex w-full justify-center bg-[#FDFEFF] pt-6 pb-[21px] px-[28px] 3xl:pt-[36px] 3xl:pb-[36px] z-[100] top-0 left-0 ${language === "Geo" ? "font-Noto" : "font-Inter"} transition-transform duration-300 ${isOpen ? "sticky" : "sticky"} ${!isOpen && (showHeader ? 'translate-y-0' : '-translate-y-full')}`}>
             <div className='flex w-full justify-between items-center 3xl:w-[1440px]'>
 
                 <Link to={"/"} onClick={handleClose}>
-                    <img className='w-[167px] cursor-pointer lg:w-[259px]' src={logo} alt="logo" />
+                    <img className='w-[167px] cursor-pointer xl:w-[259px]' src={logo} alt="logo" />
                 </Link>
 
                 <div className='hidden gap-10 xl:flex'>
@@ -73,7 +80,8 @@ export default function Header() {
                         <div className={`w-[26px] h-[3px] bg-[#1D1C1E] rounded-[4px] transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-[8px]' : ""} `}></div>
                     </div>
 
-                        <div className={`flex-col absolute top-[70px] left-0 z-[100] h-[350px] justify-center items-center rounded-b-[20px] w-full gap-[30px] bg-[#323232] lg:top-[92px] ${isOpen ?  "flex headerAnimationOpen" : "headerAnimationClose animationNone"} xl:hidden`} >
+                    <div className={`absolute top-[-400px] left-0 z-[1000] h-[350px] justify-center items-center rounded-b-[20px] w-full bg-[#323232]  ${isOpen && "headerAnimationOpen"} ${isOpen === false && "headerAnimationClose"} xl:hidden`} >
+                        <div className='flex flex-col w-full h-[350px] justify-center items-center gap-[30px]'>
                             {data.navigation.map(item => (
                                 <Link onClick={handleClose} key={item.url} to={`${item.url}`} className="font-semibold text-[16px] leading-[26px] hover:text-[#f7941d] text-[#FFFFFF] cursor-pointer">
                                     {language === "Geo" ? item.titleGeo : item.title}
@@ -85,7 +93,7 @@ export default function Header() {
                                 </button>
                             </Link>
                         </div>
-
+                    </div>
 
                 </div>
 

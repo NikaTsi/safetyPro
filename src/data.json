@@ -565,53 +565,39 @@
             "info": [
                 {
                     "title": "Why is workplace health and safety important?",
+                    "titleGeo": "რატომ არის სამუშაო ადგილის ჯანმრთელობა და უსაფრთხოება მნიშვნელოვანი?",
+                    "paragraphGeo": "სამუშაო ადგილის ჯანმრთელობა და უსაფრთხოება გადამწყვეტია თანამშრომლების კეთილდღეობის დასაცავად, უბედური შემთხვევებისა და დაზიანებების შესამცირებლად და სამართლებრივი რეგულაციების დაცვის უზრუნველსაყოფად. ჯანმრთელობისა და უსაფრთხოების პრიორიტეტების მინიჭებით, ბიზნესს შეუძლია გააძლიეროს პროდუქტიულობა, მორალი და რეპუტაცია.",
                     "paragraph": "Workplace health and safety is crucial for protecting the well-being of employees, reducing accidents and injuries, and ensuring compliance with legal regulations. By prioritizing health and safety, businesses can enhance productivity, morale, and reputation."
                 },
                 {
                     "title": "What industries do you serve?",
+                    "titleGeo": "რა ინდუსტრიებს ემსახურებით?",
+                    "paragraphGeo": "ჩვენ ვთავაზობთ ჯანმრთელობისა და უსაფრთხოების საკონსულტაციო მომსახურებას ინდუსტრიების ფართო სპექტრს, როგორიცაა სამშენებლო, წარმოება, ჯანდაცვა, სასტუმრო და საოფისე სექტორები. ჩვენი კომპანიის პოლიტიკა მორგებულია თითოეული სექტორის უნიკალურ საჭიროებებსა და რეგულაციაზე.",
                     "paragraph": "We provide health and safety consultation services to a wide range of industries, including but not limited to construction, manufacturing, healthcare, hospitality, and office environments. Our solutions are tailored to meet the unique needs and regulations of each sector."
                 },
                 {
                     "title": "How do you conduct risk assessments?",
+                    "titleGeo": "როგორ ატარებთ რისკის შეფასებას?",
+                    "paragraphGeo": "ჩვენი გამოცდილი პროფესიონალების გუნდი ატარებს რისკების შეფასებას პოტენციური საფრთხის იდენტიფიცირებით, მათი ალბათობისა და სიმძიმის შეფასებით და რისკების შესამცირებლად სტრატეგიების შემუშავებით. ჩვენ ვიყენებთ ინდუსტრიის სტანდარტის მეთოდოლოგიებსა და ინსტრუმენტებს, რათა ვუზრუნველყოთ საფუძვლიანი და ზუსტი შეფასებები.",
                     "paragraph": "Our team of experienced professionals conducts comprehensive risk assessments by identifying potential hazards, evaluating their likelihood and severity, and developing strategies to mitigate risks. We use industry-standard methodologies and tools to ensure thorough and accurate assessments."
                 },
                 {
                     "title": "What is involved in a safety audit?",
+                    "titleGeo": "რას მოიცავს უსაფრთხოების აუდიტი?",
+                    "paragraphGeo": "ჩვენი უსაფრთხოების აუდიტი მოიცავს თქვენი ორგანიზაციის უსაფრთხოების პროტოკოლების, პროცედურების და პრაქტიკის საფუძვლიან შეფასებას. ჩვენ ვაფასებთ მარეგულირებელ მოთხოვნებთან შესაბამისობას, ვადგენთ გაუმჯობესების სფეროებს და გავცემთ ქმედითუნარიან რეკომენდაციებს უსაფრთხოების სტანდარტების გასაუმჯობესებლად.",
                     "paragraph": "Our safety audits involve a thorough evaluation of your organization`s safety protocols, procedures, and practices. We assess compliance with regulatory requirements, identify areas for improvement, and provide actionable recommendations to enhance safety standards."
                 },
                 {
                     "title": "Do you offer customized training programs?",
+                    "titleGeo": "გთავაზობთ თუ არა მორგებულ სასწავლო პროგრამებს?",
+                    "paragraphGeo": "დიახ, ჩვენ გთავაზობთ მორგებულ ტრენინგ პროგრამებს, რომლებიც მორგებულია თქვენი ორგანიზაციის სპეციფიკურ საჭიროებებსა და მოთხოვნებზე. ჩვენი ტრენინგები მოიცავს თემების ფართო სპექტრს, მათ შორის საფრთხის ამოცნობას, საგანგებო სიტუაციებზე რეაგირებას, ერგონომიკას და სამუშაო ადგილის უსაფრთხოების კულტურას.",
                     "paragraph": "Yes, we offer customized training programs tailored to the specific needs and requirements of your organization. Our training sessions cover a wide range of topics, including hazard recognition, emergency response, ergonomics, and workplace safety culture."
                 },
                 {
                     "title": "How can I get started with your services?",
+                    "titleGeo": "როგორ შემიძლია დავიწყოთ თქვენთან თანამშრომლობა?",
+                    "paragraphGeo": "დაწყება მარტივია! უბრალოდ დაგვიკავშირდით კონსულტაციის დასანიშნად და ჩვენი გუნდის ერთ-ერთი მცოდნე წევრი იმუშავებს თქვენთან, რათა გაიგოს თქვენი საჭიროებები და შეიმუშაოს მორგებული გეგმა მათ მოსაგვარებლად.",
                     "paragraph": "Getting started is easy! Simply contact us to schedule a consultation, and one of our knowledgeable team members will work with you to understand your needs and develop a customized plan to address them."
-                }
-            ],
-            "infoGeo": [
-                {
-                    "title": "რატომ არის სამუშაო ადგილის ჯანმრთელობა და უსაფრთხოება მნიშვნელოვანი?",
-                    "paragraph": "სამუშაო ადგილის ჯანმრთელობა და უსაფრთხოება გადამწყვეტია თანამშრომლების კეთილდღეობის დასაცავად, უბედური შემთხვევებისა და დაზიანებების შესამცირებლად და სამართლებრივი რეგულაციების დაცვის უზრუნველსაყოფად. ჯანმრთელობისა და უსაფრთხოების პრიორიტეტების მინიჭებით, ბიზნესს შეუძლია გააძლიეროს პროდუქტიულობა, მორალი და რეპუტაცია."
-                },
-                {
-                    "title": "რა ინდუსტრიებს ემსახურებით?",
-                    "paragraph": "ჩვენ ვთავაზობთ ჯანმრთელობისა და უსაფრთხოების საკონსულტაციო მომსახურებას ინდუსტრიების ფართო სპექტრს, როგორიცაა სამშენებლო, წარმოება, ჯანდაცვა, სასტუმრო და საოფისე სექტორები. ჩვენი კომპანიის პოლიტიკა მორგებულია თითოეული სექტორის უნიკალურ საჭიროებებსა და რეგულაციაზე."
-                },
-                {
-                    "title": "როგორ ატარებთ რისკის შეფასებას?",
-                    "paragraph": "ჩვენი გამოცდილი პროფესიონალების გუნდი ატარებს რისკების შეფასებას პოტენციური საფრთხის იდენტიფიცირებით, მათი ალბათობისა და სიმძიმის შეფასებით და რისკების შესამცირებლად სტრატეგიების შემუშავებით. ჩვენ ვიყენებთ ინდუსტრიის სტანდარტის მეთოდოლოგიებსა და ინსტრუმენტებს, რათა ვუზრუნველყოთ საფუძვლიანი და ზუსტი შეფასებები."
-                },
-                {
-                    "title": "რას მოიცავს უსაფრთხოების აუდიტი?",
-                    "paragraph": "ჩვენი უსაფრთხოების აუდიტი მოიცავს თქვენი ორგანიზაციის უსაფრთხოების პროტოკოლების, პროცედურების და პრაქტიკის საფუძვლიან შეფასებას. ჩვენ ვაფასებთ მარეგულირებელ მოთხოვნებთან შესაბამისობას, ვადგენთ გაუმჯობესების სფეროებს და გავცემთ ქმედითუნარიან რეკომენდაციებს უსაფრთხოების სტანდარტების გასაუმჯობესებლად."
-                },
-                {
-                    "title": "გთავაზობთ თუ არა მორგებულ სასწავლო პროგრამებს?",
-                    "paragraph": "დიახ, ჩვენ გთავაზობთ მორგებულ ტრენინგ პროგრამებს, რომლებიც მორგებულია თქვენი ორგანიზაციის სპეციფიკურ საჭიროებებსა და მოთხოვნებზე. ჩვენი ტრენინგები მოიცავს თემების ფართო სპექტრს, მათ შორის საფრთხის ამოცნობას, საგანგებო სიტუაციებზე რეაგირებას, ერგონომიკას და სამუშაო ადგილის უსაფრთხოების კულტურას."
-                },
-                {
-                    "title": "როგორ შემიძლია დავიწყოთ თქვენთან თანამშრომლობა?",
-                    "paragraph": "დაწყება მარტივია! უბრალოდ დაგვიკავშირდით კონსულტაციის დასანიშნად და ჩვენი გუნდის ერთ-ერთი მცოდნე წევრი იმუშავებს თქვენთან, რათა გაიგოს თქვენი საჭიროებები და შეიმუშაოს მორგებული გეგმა მათ მოსაგვარებლად."
                 }
             ]
         }
