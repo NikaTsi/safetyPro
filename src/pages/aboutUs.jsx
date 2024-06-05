@@ -11,8 +11,25 @@ function AboutUs() {
     return (
         <main className={`flex w-full min-h-screen bg-[#FDFEFF] 4xl:justify-center ${language === "Geo" ? "font-Noto" : "font-Inter"}`}>
             <Helmet>
-                <title>{language === "Geo" ? "ჩვენს შესახებ" : "About Us"}</title>
+            <title>{language === "Geo" ? "ჩვენს შესახებ - სეიფთიპრო" : "About Us - SafetyPro"}</title>
                 <meta name="description" content={language === "Geo" ? "გაიგეთ მეტი ჩვენი კომპანიის შესახებ, ჩვენი მისია და ღირებულებები." : "Learn more about our company, our mission, and our values."} />
+                <meta name="keywords" content="About Us, Our Company, Our Mission, Our Values" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://safety-pro.vercel.app/aboutUs" />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "http://schema.org",
+                        "@type": "Organization",
+                        "name": "SafetyPro",
+                        "url": "https://safety-pro.vercel.app",
+                        "logo": "https://safety-pro.vercel.app/logo.png",
+                        "sameAs": [
+                            "https://www.facebook.com/profile.php?id=61556500727714",
+                            "https://www.instagram.com/safetypro__?igsh=aWwwYzFpd2hsZ3M%3D&utm_source=qr"
+                        ],
+                        "description": language === "Geo" ? "გაიგეთ მეტი ჩვენი კომპანიის შესახებ, ჩვენი მისია და ღირებულებები." : "Learn more about our company, our mission, and our values."
+                    })}
+                </script>
             </Helmet>
             <div className='flex flex-col w-full 4xl:w-[1440px]'>
 
