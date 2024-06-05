@@ -53,7 +53,7 @@ export default function Faqs() {
 
                   <div className='flex w-full gap-[10px] justify-between items-start'>
                     <h1 className='text-[18px] font-semibold leading-[27px] text-[#323232]'>{language === "Geo" ? item.titleGeo : item.title}</h1>
-                    <div className={`flex relative font-Inter justify-center items-center border-[2px] rounded-[50%] min-w-[24px] h-[24px] pb-[2px] font-bold text-[20px] hover:cursor-pointer hover:opacity-80 z-[100]  ${activeIndex === index ? 'border-[#F7941D] text-[#F7941D]' : 'border-[#58595b] text-[#58595b]'}`} onClick={() => handleClick(index)}>{activeIndex === index ? '-' : '+'}</div>
+                    <div className={`flex relative font-Inter justify-center items-center border-[2px] rounded-[50%] min-w-[24px] h-[24px] pb-[2px] font-bold text-[20px] hover:cursor-pointer hover:opacity-80 z-[10]  ${activeIndex === index ? 'border-[#F7941D] text-[#F7941D]' : 'border-[#58595b] text-[#58595b]'}`} onClick={() => handleClick(index)}>{activeIndex === index ? '-' : '+'}</div>
                   </div>
 
                   <div>

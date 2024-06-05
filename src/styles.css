@@ -92,18 +92,3 @@
 .close {
     animation: close 0.3s ease-in-out forwards;
 }
-
-.animationNone {
-    display: none;
-}
-.animation {
-    display: flex;
-}
-
-
-@media (width >=1160px) {
-    .headerAnimationInvisible {
-        visibility: hidden;
-        display: none;
-    }
-}
